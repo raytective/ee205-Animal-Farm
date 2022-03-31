@@ -12,12 +12,14 @@
 
 #include <stddef.h>
 #include <stdbool.h>
+#include "config.h"
 
 #define MAX_CATS 1024
 #define MAX_NAME 50
 #define BAD_CAT -1
 
-extern int currentCats;
+extern NumCats currentCats;
+
 
 enum Gender{ UNKNOWN_GENDER=0, MALE, FEMALE };
 enum Breed{ UNKNOWN_BREED=0, MAINE_COON, MANX,
@@ -30,7 +32,7 @@ struct catData {
     enum Gender catGender ;
     enum Breed catBreed ;
     bool catFixed ;
-    float catWeight ;
+    Weight catWeight ;
     enum Color collarColor1 ;
     enum Color collarColor2 ;
     unsigned long long license ;
@@ -38,11 +40,4 @@ struct catData {
 
 extern struct catData cats[MAX_CATS];
 
-/*
-extern char catNames[MAX_CATS] [MAX_NAME] ;
-extern enum gender catGender[MAX_CATS] ;
-extern enum breed catBreed[MAX_CATS] ;
-extern bool catFixed[MAX_CATS] ;
-extern float catWeight[MAX_CATS] ;
-*/
 

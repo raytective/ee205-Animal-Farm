@@ -12,5 +12,5 @@
 
 #include "catDatabase.h"
 
-int addCat(const char* name,enum Gender,enum Breed,bool fixed,float weight, enum Color, enum Color, int license);
+int addCat(const char* name,enum Gender,enum Breed,bool fixed,Weight weight, enum Color, enum Color, int license);
 

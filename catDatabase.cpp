@@ -11,14 +11,6 @@
 #include "catDatabase.h"
 
 int currentCats;
-/*
-struct catData {
-   char catNames[MAX_CATS] [MAX_NAME] ;
-   enum gender catGender[MAX_CATS] ;
-   enum breed catBreed[MAX_CATS] ;
-   bool catFixed[MAX_CATS] ;
-   float catWeight[MAX_CATS] ;
-};
-*/
+
 
 struct catData cats[MAX_CATS];

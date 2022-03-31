@@ -5,7 +5,7 @@
 /// @file addCats.cpp
 /// @version 1.0
 ///
-/// @author Rachel Watananbe <rkwatanao@hawaii.edu>
+/// @author Rachel Watanabe <rkwatana@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
 #include "addCats.h"
@@ -14,8 +14,8 @@
 #include "config.h"
 #include "catDatabase.h"
 
-int addCat(const char* name,enum Gender newGender,enum Breed newBreed,bool fixed,float weight, enum Color color1, enum Color color2, int license ) {
-    int cat = currentCats;
+int addCat(const char* name,enum Gender newGender,enum Breed newBreed,bool fixed,Weight weight, enum Color color1, enum Color color2, int license ) {
+    NumCats cat = currentCats;
 
     if( currentCats >= MAX_CATS) {
         fprintf( stderr, "%s: Cat database is full.\n", PROGRAM_NAME );

@@ -43,7 +43,6 @@ void printAllCats() {
     for( int i=0; i < currentCats; i++ ) {
         printCat(i);
     }
-
 }
 
 
@@ -54,6 +53,5 @@ int findCat( const char* name ) {
         }
     }
     return BAD_CAT;
-
 }
 

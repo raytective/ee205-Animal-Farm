@@ -11,3 +11,6 @@
 #pragma once
 
 #define PROGRAM_NAME "animalFarm1"
+
+typedef float Weight;
+typedef int NumCats;
