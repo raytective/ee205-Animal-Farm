@@ -8,6 +8,7 @@
 /// @author Rachel Watananbe <rkwatanao@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
+#define MAX 50
 
 extern const char* genderName( const enum Gender gender ) ;
 extern const char* breedName( const enum Breed type ) ;

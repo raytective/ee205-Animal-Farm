@@ -8,7 +8,6 @@
 /// @author Rachel Watananbe <rkwatanao@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
-/*
 #include <string.h>
 
 #include "catDatabase.h"
@@ -95,4 +94,3 @@ const char* colorName( const enum Color col ) {
     return color;
 
 }
- */
