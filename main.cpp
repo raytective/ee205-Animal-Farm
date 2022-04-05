@@ -9,7 +9,7 @@
 /// @author Rachel Watanabe <rkwatana@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
-#include <stdio.h>
+#include <iostream>
 #include "catDatabase.h"
 #include "addCats.h"
 #include "reportCats.h"
@@ -17,8 +17,14 @@
 #include "deleteCats.h"
 #include "convertCats.h"
 
+using namespace std;
+
 int main(){
 
+    cout << "Starting " << PROGRAM_NAME << endl;
+    cout << "Done with " << PROGRAM_NAME << endl;
+
+    /*
     printf("Starting Animal Farm 1\n");
 #ifdef DEBUG
     addCat( "", FEMALE, MAINE_COON, false, 10.0 ) ;
@@ -65,6 +71,6 @@ int main(){
     printAllCats() ;
 
     printf("Done with Animal Farm 1\n") ;
-
+*/
 }
 

@@ -8,6 +8,7 @@
 /// @author Rachel Watananbe <rkwatanao@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
+/*
 #include <stdio.h>
 #include <string.h>
 
@@ -54,4 +55,4 @@ int findCat( const char* name ) {
     }
     return BAD_CAT;
 }
-
+*/

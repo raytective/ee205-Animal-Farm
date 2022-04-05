@@ -8,11 +8,13 @@
 /// @author Rachel Watanabe <rkwatana@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
+/*
 #include "addCats.h"
 #include <stdio.h>
 #include <string.h>
 #include "config.h"
 #include "catDatabase.h"
+
 
 int addCat(const char* name,enum Gender newGender,enum Breed newBreed,bool fixed,Weight weight, enum Color color1, enum Color color2, int license ) {
     NumCats cat = currentCats;
@@ -67,5 +69,5 @@ int addCat(const char* name,enum Gender newGender,enum Breed newBreed,bool fixed
 
     currentCats++;
     return cat;
-
 }
+ */

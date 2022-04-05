@@ -8,9 +8,10 @@
 /// @author Rachel Watanabe <rkwatana@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
+/*
 #include "catDatabase.h"
 
 int currentCats;
 
-
 struct catData cats[MAX_CATS];
+ */
