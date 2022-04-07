@@ -14,8 +14,9 @@
 #include <stdbool.h>
 #include "config.h"
 
-#define MAX_CATS 1024
-#define MAX_NAME 50
+#define MAX_CATS (1024)
+#define MAX_NAME (50)
+#define UNKNOWN_WEIGHT (-1)
 #define BAD_CAT -1
 
 extern NumCats currentCats;

@@ -27,10 +27,11 @@ public:
     Weight getWeight() const;
 
     void setName( const char* newName );
-    void setGender( Gender newGender );
-    void setBreed( Breed newBreed );
     bool fixCat();
     void setWeight ( Weight newWeight );
+
+    bool print() const ;
+    bool validate() const;
 
 protected:
     char name[MAX_NAME] ;
@@ -38,5 +39,9 @@ protected:
     enum Breed breed ;
     bool isFixed ;
     Weight weight ;
+
+    void setGender( Gender newGender );
+    void setBreed( Breed newBreed );
+
 };
 
