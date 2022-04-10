@@ -10,7 +10,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 #include <string.h>
 
-#include "catDatabase.h"
+#include "config.h"
 #include "convertCats.h"
 
 const char* genderName( const enum Gender gen ) {

@@ -8,6 +8,11 @@
 /// @author Rachel Watanabe <rkwatana@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
+#include "Cat.h"
+
+Cat* catDatabaseHeadPointer = nullptr;
+
+
 /*
 #include "catDatabase.h"
 

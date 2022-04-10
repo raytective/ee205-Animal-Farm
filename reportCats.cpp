@@ -8,6 +8,29 @@
 /// @author Rachel Watananbe <rkwatanao@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
+/// Format a line for printing the members of a class
+#define FORMAT_LINE( className, member ) cout << setw(8) << (className) << setw(20) << (member) << setw(52)
+
+#include <iostream>
+#include <iomanip>
+#include "Cat.h"
+#include "catDatabase.h"
+#include "convertCats.h"
+
+using namespace std;
+
+bool printAllCats() {
+    Cat* current = catDatabaseHeadPointer;
+
+    while( current != nullptr ) {
+        current->print();
+        current = current->next;
+    }
+
+    return true;
+}
+
+
 /*
 #include <stdio.h>
 #include <string.h>

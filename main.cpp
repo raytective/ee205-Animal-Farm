@@ -16,12 +16,36 @@
 #include "updateCats.h"
 #include "deleteCats.h"
 #include "convertCats.h"
+#include "config.h"
+#include "Cat.h"
 
 using namespace std;
 
 int main(){
 
     cout << "Starting " << PROGRAM_NAME << endl;
+
+    Cat Loki = Cat("Loki", MALE, PERSIAN, 1.0),
+        Milo = Cat("Milo", MALE, MANX, 1.1),
+        Bella = Cat("Bella", FEMALE, MAINE_COON, 1.2),
+        Kali = Cat("Kali", FEMALE, SHORTHAIR, 1.3),
+        Trin = Cat("Trin", FEMALE, MANX, 1.4),
+        Chili = Cat("Chili", MALE, SHORTHAIR, 1.5);
+
+    addCat( &Loki );
+    addCat( &Milo );
+    addCat( &Bella );
+    addCat( &Kali );
+    addCat( &Trin );
+    addCat( &Chili );
+
+    printAllCats();
+
+
+
+
+
+
     cout << "Done with " << PROGRAM_NAME << endl;
 
     /*

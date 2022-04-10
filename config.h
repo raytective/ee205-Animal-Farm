@@ -11,6 +11,29 @@
 #pragma once
 
 #define PROGRAM_NAME "Animal Farm"
+#define MAX_CATS (1024)
+#define MAX_NAME (50)
+#define UNKNOWN_WEIGHT (-1)
+#define BAD_CAT -1
 
 typedef float Weight;
 typedef int NumCats;
+
+enum Gender{ UNKNOWN_GENDER=0, MALE, FEMALE };
+enum Breed{ UNKNOWN_BREED=0, MAINE_COON, MANX,
+    SHORTHAIR, PERSIAN, SPHYNX };
+enum Color{ BLACK=0, WHITE, RED, BLUE, GREEN,
+    PINK };
+
+struct catData {
+    char names[MAX_NAME] ;
+    enum Gender catGender ;
+    enum Breed catBreed ;
+    bool catFixed ;
+    Weight catWeight ;
+ /* enum Color collarColor1 ;
+    enum Color collarColor2 ;
+    unsigned long long license ;*/
+};
+
+extern struct catData cats[MAX_CATS];

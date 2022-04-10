@@ -10,7 +10,8 @@
 ///////////////////////////////////////////////////////////////////////////////
 #pragma once
 
-#include "catDatabase.h"
+bool addCat( Cat* newCat );
 
+/*
 int addCat(const char* name,enum Gender,enum Breed,bool fixed,Weight weight, enum Color, enum Color, int license);
-
+*/

@@ -8,8 +8,14 @@
 /// @author Rachel Watanabe <rkwatana@hawaii.edu>
 /// @date   05_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
-#include "Cat.h"
 #include <iostream>
+#include <iomanip>
+#include <cstring>
+#include "Cat.h"
+#include "convertCats.h"
+
+#define FORMAT_LINE( className, member ) cout << setw(8) << (className) << setw(20) << (member) << setw(52)
+
 using namespace std;
 
 // Constructors
@@ -30,66 +36,70 @@ Cat::Cat(const char *newName, const Gender newGender, const Breed newBreed, cons
 }
 
 // Getters
-Gender Cat::getGender() const {
+Gender Cat::getGender() const noexcept {
     return gender;
 }
 
-Breed Cat::getBreed() const {
+Breed Cat::getBreed() const noexcept {
     return breed;
 }
 
-bool Cat::isCatFixed() const {
-    return isFixed;
+Weight Cat::getWeight() const noexcept {
+    return weight;
 }
 
-Weight Cat::getWeight() const {
-    return weight;
+bool Cat::isFixed() const noexcept {
+    return false;
 }
 
 
 // Setters
 void Cat::setName(const char *newName) {
+    for( long unsigned j=0; j <= strlen(newName); j++ ) {
+        Cat::name[j] = newName[j];
+    }
 
 }
 
 void Cat::setGender(Gender newGender) {
-    if( gender != UNKNOWN_GENDER && newGender != UNKNOWN_GENDER )
-        cout << "pee" << endl;
-
     Cat::gender = newGender;
-
 }
 
 void Cat::setBreed(Breed newBreed) {
-    if( breed != UNKNOWN_BREED && newBreed != UNKNOWN_BREED )
-        cout << "pee" << endl;
-
     Cat::breed = newBreed;
 }
 
-bool Cat::fixCat() {
-    return true;
-}
 
 void Cat::setWeight(Weight newWeight) {
-    if( newWeight <= 0 )
-        cout << "pee" << endl;
-
     Cat::weight = newWeight;
 
 }
 
-const char *Cat::getName() const {
-    return nullptr;
+const char *Cat::getName() const noexcept {
+    return name;
 }
 
-bool Cat::print() const {
+bool Cat::print() const noexcept {
+    cout << setw(80) << setfill( '=' ) << "" << endl ;
+    cout << setfill( ' ' ) ;
+    cout << left ;
+    cout << boolalpha ;
+    FORMAT_LINE( "Cat", "name" ) << getName() << endl ;
+    FORMAT_LINE( "Cat", "gender" ) << genderName( getGender() ) << endl ;
+    FORMAT_LINE( "Cat", "breed" ) << breedName( getBreed() ) << endl ;
+    FORMAT_LINE( "Cat", "isFixed" ) << isFixed() << endl ;
+    FORMAT_LINE( "Cat", "weight" ) << getWeight() << endl ;
+    return true ;
+}
+
+bool Cat::validate() const noexcept {
     return false;
 }
 
-bool Cat::validate() const {
+bool Cat::fixCat() noexcept {
     return false;
 }
+
 
 
 

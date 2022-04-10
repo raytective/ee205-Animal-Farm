@@ -8,6 +8,17 @@
 /// @author Rachel Watanabe <rkwatana@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
+#include <iostream>
+#include "catDatabase.h"
+#include "Cat.h"
+using namespace std;
+
+bool addCat( Cat* newCat ) {
+    newCat->next = catDatabaseHeadPointer;
+    catDatabaseHeadPointer = newCat;
+    return true;
+}
+
 /*
 #include "addCats.h"
 #include <stdio.h>

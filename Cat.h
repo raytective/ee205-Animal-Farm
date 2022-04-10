@@ -8,40 +8,42 @@
 /// @author Rachel Watanabe <rkwatana@hawaii.edu>
 /// @date   05_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
-#include "catDatabase.h"
-
 #pragma once
+
+#include "config.h"
 
 class Cat {
 public:
+
+    Cat* next;
+
     Cat();
     Cat( const char* newName
          ,const Gender newGender
          ,const Breed newBreed
          ,const Weight newWeight );
 
-    const char* getName() const;
-    Gender getGender() const;
-    Breed getBreed() const;
-    bool isCatFixed() const;
-    Weight getWeight() const;
+    const char* getName() const noexcept;
+    Gender getGender() const noexcept;
+    Breed getBreed() const noexcept;
+    bool isFixed() const noexcept;
+    Weight getWeight() const noexcept;
 
     void setName( const char* newName );
-    bool fixCat();
+    bool fixCat() noexcept;
     void setWeight ( Weight newWeight );
 
-    bool print() const ;
-    bool validate() const;
+    bool print() const noexcept;
+    bool validate() const noexcept;
 
 protected:
     char name[MAX_NAME] ;
     enum Gender gender ;
     enum Breed breed ;
-    bool isFixed ;
+    bool isCatFixed ;
     Weight weight ;
 
     void setGender( Gender newGender );
     void setBreed( Breed newBreed );
 
 };
-
