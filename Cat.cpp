@@ -100,6 +100,10 @@ bool Cat::fixCat() noexcept {
     return false;
 }
 
+Cat::~Cat() {
+}
+
+
 
 
 

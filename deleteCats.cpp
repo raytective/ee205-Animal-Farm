@@ -8,6 +8,22 @@
 /// @author Rachel Watanabe <rkwatana@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include "Cat.h"
+#include "catDatabase.h"
+using namespace std;
+
+bool deleteAllCats() {
+    Cat* current = catDatabaseHeadPointer;
+    Cat* tmp;
+    while (current != NULL) {
+        tmp = current->next;
+        free(current);
+        current = tmp;
+    }
+    return true;
+}
+
 /*
 #include "catDatabase.h"
 #include <stdio.h>

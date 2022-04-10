@@ -36,6 +36,8 @@ public:
     bool print() const noexcept;
     bool validate() const noexcept;
 
+    virtual ~Cat();
+
 protected:
     char name[MAX_NAME] ;
     enum Gender gender ;

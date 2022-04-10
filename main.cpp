@@ -24,7 +24,6 @@ using namespace std;
 int main(){
 
     cout << "Starting " << PROGRAM_NAME << endl;
-
     Cat Loki = Cat("Loki", MALE, PERSIAN, 1.0),
         Milo = Cat("Milo", MALE, MANX, 1.1),
         Bella = Cat("Bella", FEMALE, MAINE_COON, 1.2),
@@ -40,6 +39,8 @@ int main(){
     addCat( &Chili );
 
     printAllCats();
+    deleteAllCats();
+
 
 
 
