@@ -25,6 +25,7 @@ int main(){
 
     cout << "Starting " << PROGRAM_NAME << endl;
 
+    initializeDatabase();
     addCat( new Cat("Loki", MALE, PERSIAN, 1.0));
     addCat( new Cat("Milo", MALE, MANX, 1.1));
     addCat(new Cat("Bella", FEMALE, MAINE_COON, 1.2));

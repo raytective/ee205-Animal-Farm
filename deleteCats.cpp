@@ -17,6 +17,7 @@ using namespace std;
 bool deleteAllCats() {
     Cat* current = catDatabaseHeadPointer;
     Cat* tmp;
+    validateDatabase();
     while (current != NULL) {
         tmp = current->next;
         free(current);
@@ -24,6 +25,8 @@ bool deleteAllCats() {
     }
     cout << "Deleted database" << endl;
     catDatabaseHeadPointer = nullptr;
+    validateDatabase();
+
     return true;
 }
 

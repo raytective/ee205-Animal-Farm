@@ -15,4 +15,8 @@
 extern NumCats currentCats;
 extern Cat* catDatabaseHeadPointer;
 
+void initializeDatabase();
+bool validateDatabase();
+Cat* findCatByName( const char* name );
+
 

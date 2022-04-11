@@ -8,14 +8,17 @@
 /// @author Rachel Watanabe <rkwatana@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
-#include <iostream>
 #include "catDatabase.h"
 #include "Cat.h"
 using namespace std;
 
 bool addCat( Cat* newCat ) {
+    validateDatabase();
+    newCat->validate();
+
     newCat->next = catDatabaseHeadPointer;
     catDatabaseHeadPointer = newCat;
+    validateDatabase();
     return true;
 }
 

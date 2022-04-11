@@ -17,6 +17,7 @@ using namespace std;
 bool printAllCats() {
     Cat* current = catDatabaseHeadPointer;
 
+    validateDatabase();
     while( current != nullptr ) {
         current->print();
         current = current->next;
