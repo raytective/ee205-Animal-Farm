@@ -30,6 +30,36 @@ bool deleteAllCats() {
     return true;
 }
 
+
+bool deleteCat(Cat* deletedCat ) {
+    Cat* tmp = catDatabaseHeadPointer;
+    if( catDatabaseHeadPointer == nullptr ) {
+        validateDatabase();
+        return true;    // database already empty
+    }
+
+    if( deletedCat == catDatabaseHeadPointer ) {
+        catDatabaseHeadPointer = tmp->next;
+        free(tmp);
+        validateDatabase();
+        return true;
+    }
+
+    while( tmp != nullptr ){
+        if( tmp->next == deletedCat ) {
+            tmp->next = deletedCat->next;
+            free(deletedCat);
+
+            validateDatabase();
+            return true;
+        }
+        tmp = tmp->next;
+    }
+
+    return false;
+
+}
+
 /*
 #include "catDatabase.h"
 #include <stdio.h>

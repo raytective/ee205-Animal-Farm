@@ -31,7 +31,6 @@ int main(){
     initializeDatabase();
 
     Cat badCat = Cat();
-
     assert(strlen(badCat.getName()) == 0);
     assert(badCat.getGender() == UNKNOWN_GENDER);
     assert(badCat.getBreed() == UNKNOWN_BREED);
@@ -39,8 +38,22 @@ int main(){
     assert(badCat.getWeight() == -1);
     assert(!badCat.validate());
 
-    badCat.setName(nullptr);
-    assert(!badCat.validate());
+    try {
+        badCat.setName(nullptr);
+        assert(false);
+    } catch(exception) {
+        cout << "nullptr exception caught" << endl;
+    }
+
+    try {
+        badCat.setName("");
+        assert(false);
+    } catch(exception) {
+        cout << "blank exception caught" << endl;
+    }
+
+
+
 
     addCat( new Cat("Loki", MALE, PERSIAN, 1.0));
     addCat( new Cat("Milo", MALE, MANX, 1.1));

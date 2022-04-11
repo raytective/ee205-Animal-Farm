@@ -23,7 +23,7 @@ using namespace std;
 // Constructors
 Cat::Cat() {
     next = nullptr;
-    setName( "");
+    memset(name, 0, MAX_NAME);
     setGender( UNKNOWN_GENDER );
     setBreed( UNKNOWN_BREED );
     isCatFixed = false;
@@ -58,9 +58,9 @@ bool Cat::isFixed() const noexcept {
 
 // Setters
 void Cat::setName(const char *newName) {
-    for( long unsigned j=0; j <= strlen(newName); j++ ) {
-        Cat::name[j] = newName[j];
-    }
+    validateName( newName );
+    memset(name, 0, MAX_NAME);
+    strcpy(Cat::name, newName );
 
 }
 
@@ -107,8 +107,8 @@ bool Cat::validateName(const char *newName) {
     if( newName == nullptr ) {
         throw invalid_argument(PROGRAM_NAME ": Name can't be null");
     }
-    if( newName == "" ) {
-        throw invalid_argument(PROGRAM_NAME ": Name can't be empty");
+    if( strlen( newName ) <= 0 ) {
+        throw length_error( PROGRAM_NAME ": name can't be blank");
     }
     if(strlen(newName) > MAX_NAME ) {
         throw length_error(PROGRAM_NAME ": Name too long");
@@ -143,8 +143,8 @@ bool Cat::validate() const noexcept {
         validateGender( gender );
         validateBreed( breed );
         validateWeight( weight );
-    } catch (exception ) {
-        cout<< PROGRAM_NAME ": Validation failed" << endl;
+    } catch (exception) {
+        /*cout<< PROGRAM_NAME ": Validation failed" << endl;*/
         return false;
     }
 
