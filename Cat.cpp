@@ -34,6 +34,7 @@ Cat::Cat(const char *newName, const Gender newGender, const Breed newBreed, cons
     setName( newName );
     setGender( newGender );
     setBreed( newBreed );
+    isCatFixed = false;
     setWeight( newWeight );
 }
 
@@ -95,11 +96,11 @@ bool Cat::print() const noexcept {
 }
 
 bool Cat::fixCat() noexcept {
-    return false;
+    Cat::isCatFixed = true;
+    return true;
 }
 
 Cat::~Cat() {
-    Cat();
 }
 
 bool Cat::validateName(const char *newName) {
@@ -137,10 +138,16 @@ bool Cat::validateWeight(const Weight newWeight) {
 }
 
 bool Cat::validate() const noexcept {
-    validateName( name );
-    validateGender( gender );
-    validateBreed( breed );
-    validateWeight( weight );
+    try{
+        validateName( name );
+        validateGender( gender );
+        validateBreed( breed );
+        validateWeight( weight );
+    } catch (exception ) {
+        cout<< PROGRAM_NAME ": Validation failed" << endl;
+        return false;
+    }
+
     return true;
 }
 

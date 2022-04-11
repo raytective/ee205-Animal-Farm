@@ -10,6 +10,9 @@
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
 #include <iostream>
+#include <assert.h>
+#include <cstring>
+
 #include "catDatabase.h"
 #include "addCats.h"
 #include "reportCats.h"
@@ -26,6 +29,19 @@ int main(){
     cout << "Starting " << PROGRAM_NAME << endl;
 
     initializeDatabase();
+
+    Cat badCat = Cat();
+
+    assert(strlen(badCat.getName()) == 0);
+    assert(badCat.getGender() == UNKNOWN_GENDER);
+    assert(badCat.getBreed() == UNKNOWN_BREED);
+    assert(badCat.isFixed() == false);
+    assert(badCat.getWeight() == -1);
+    assert(!badCat.validate());
+
+    badCat.setName(nullptr);
+    assert(!badCat.validate());
+
     addCat( new Cat("Loki", MALE, PERSIAN, 1.0));
     addCat( new Cat("Milo", MALE, MANX, 1.1));
     addCat(new Cat("Bella", FEMALE, MAINE_COON, 1.2));
