@@ -12,6 +12,7 @@
 #include "Cat.h"
 #include "catDatabase.h"
 using namespace std;
+#include <iostream>
 
 bool deleteAllCats() {
     Cat* current = catDatabaseHeadPointer;
@@ -21,6 +22,8 @@ bool deleteAllCats() {
         free(current);
         current = tmp;
     }
+    cout << "Deleted database" << endl;
+    catDatabaseHeadPointer = nullptr;
     return true;
 }
 

@@ -24,28 +24,17 @@ using namespace std;
 int main(){
 
     cout << "Starting " << PROGRAM_NAME << endl;
-    Cat Loki = Cat("Loki", MALE, PERSIAN, 1.0),
-        Milo = Cat("Milo", MALE, MANX, 1.1),
-        Bella = Cat("Bella", FEMALE, MAINE_COON, 1.2),
-        Kali = Cat("Kali", FEMALE, SHORTHAIR, 1.3),
-        Trin = Cat("Trin", FEMALE, MANX, 1.4),
-        Chili = Cat("Chili", MALE, SHORTHAIR, 1.5);
 
-    addCat( &Loki );
-    addCat( &Milo );
-    addCat( &Bella );
-    addCat( &Kali );
-    addCat( &Trin );
-    addCat( &Chili );
+    addCat( new Cat("Loki", MALE, PERSIAN, 1.0));
+    addCat( new Cat("Milo", MALE, MANX, 1.1));
+    addCat(new Cat("Bella", FEMALE, MAINE_COON, 1.2));
+    addCat(new Cat("Kali", FEMALE, SHORTHAIR, 1.3));
+    addCat(new Cat("Trin", FEMALE, MANX, 1.4));
+    addCat(new Cat("Chili", MALE, SHORTHAIR, 1.5));
 
     printAllCats();
     deleteAllCats();
-
-
-
-
-
-
+    printAllCats();
 
     cout << "Done with " << PROGRAM_NAME << endl;
 
