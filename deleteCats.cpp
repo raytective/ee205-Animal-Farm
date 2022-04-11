@@ -59,24 +59,3 @@ bool deleteCat(Cat* deletedCat ) {
     return false;
 
 }
-
-/*
-#include "catDatabase.h"
-#include <stdio.h>
-
-void deleteAllCats() {
-    currentCats = 0;
-}
-
-// @todo fix this function
-/*
-void deleteCat(int index) {
-   printf("%s\n", catNames[index]);
-   for(int i=0; i < MAX_NAME; i++) {
-      catNames[index][i] = 0;
-   }
-   printf("name? %s\n", catNames[index]);
-
-}
-*/
-

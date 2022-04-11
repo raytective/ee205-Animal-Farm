@@ -24,15 +24,4 @@ enum Breed{ UNKNOWN_BREED=0, MAINE_COON, MANX,
 enum Color{ BLACK=0, WHITE, RED, BLUE, GREEN,
     PINK };
 
-/*
-struct catData {
-    char names[MAX_NAME] ;
-    enum Gender catGender ;
-    enum Breed catBreed ;
-    bool catFixed ;
-    Weight catWeight ;
-    enum Color collarColor1 ;
-    enum Color collarColor2 ;
-    unsigned long long license ;
-};*/
 

@@ -60,11 +60,3 @@ Cat* findCatByName( const char* name ) {
     return nullptr;
 }
 
-
-/*
-#include "catDatabase.h"
-
-int currentCats;
-
-struct catData cats[MAX_CATS];
- */
