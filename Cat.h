@@ -36,6 +36,11 @@ public:
     bool print() const noexcept;
     bool validate() const noexcept;
 
+    static bool validateName( const char *newName );
+    static bool validateGender( const Gender newGender );
+    static bool validateBreed( const Breed newBreed );
+    static bool validateWeight( const Weight newWeight );
+
     virtual ~Cat();
 
 protected:

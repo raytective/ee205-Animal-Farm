@@ -10,9 +10,11 @@
 ///////////////////////////////////////////////////////////////////////////////
 #include <iostream>
 #include <iomanip>
+#include <stdexcept>
 #include <cstring>
 #include "Cat.h"
 #include "convertCats.h"
+#include "config.h"
 
 #define FORMAT_LINE( className, member ) cout << setw(8) << (className) << setw(20) << (member) << setw(52)
 
@@ -20,19 +22,19 @@ using namespace std;
 
 // Constructors
 Cat::Cat() {
+    next = nullptr;
     setName( "");
     setGender( UNKNOWN_GENDER );
     setBreed( UNKNOWN_BREED );
+    isCatFixed = false;
     setWeight(UNKNOWN_WEIGHT );
 }
 
 Cat::Cat(const char *newName, const Gender newGender, const Breed newBreed, const Weight newWeight) {
-    Cat();
     setName( newName );
     setGender( newGender );
     setBreed( newBreed );
     setWeight( newWeight );
-
 }
 
 // Getters
@@ -92,17 +94,55 @@ bool Cat::print() const noexcept {
     return true ;
 }
 
-bool Cat::validate() const noexcept {
-    return false;
-}
-
 bool Cat::fixCat() noexcept {
     return false;
 }
 
 Cat::~Cat() {
+    Cat();
 }
 
+bool Cat::validateName(const char *newName) {
+    if( newName == nullptr ) {
+        throw invalid_argument(PROGRAM_NAME ": Name can't be null");
+    }
+    if( newName == "" ) {
+        throw invalid_argument(PROGRAM_NAME ": Name can't be empty");
+    }
+    if(strlen(newName) > MAX_NAME ) {
+        throw length_error(PROGRAM_NAME ": Name too long");
+    }
+    return true;
+}
+
+bool Cat::validateGender(const Gender newGender){
+    if( newGender == UNKNOWN_GENDER ) {
+        throw invalid_argument(PROGRAM_NAME ": Gender must be known");
+    }
+    return true;
+}
+
+bool Cat::validateBreed(const Breed newBreed) {
+    if( newBreed == UNKNOWN_BREED ) {
+        throw invalid_argument(PROGRAM_NAME ": Breed must be known");
+    }
+    return true;
+}
+
+bool Cat::validateWeight(const Weight newWeight) {
+    if( newWeight < 0 ) {
+        throw invalid_argument(PROGRAM_NAME ": Weight can't be < 0");
+    }
+    return true;
+}
+
+bool Cat::validate() const noexcept {
+    validateName( name );
+    validateGender( gender );
+    validateBreed( breed );
+    validateWeight( weight );
+    return true;
+}
 
 
 

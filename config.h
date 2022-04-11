@@ -11,7 +11,6 @@
 #pragma once
 
 #define PROGRAM_NAME "Animal Farm"
-#define MAX_CATS (1024)
 #define MAX_NAME (50)
 #define UNKNOWN_WEIGHT (-1)
 #define BAD_CAT -1
@@ -36,4 +35,3 @@ struct catData {
     unsigned long long license ;*/
 };
 
-extern struct catData cats[MAX_CATS];
