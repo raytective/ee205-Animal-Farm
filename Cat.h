@@ -43,14 +43,15 @@ public:
 
     virtual ~Cat();
 
+    void setGender( Gender newGender );
+
+    void setBreed( Breed newBreed );
+
 protected:
     char name[MAX_NAME] ;
     enum Gender gender ;
     enum Breed breed ;
     bool isCatFixed ;
     Weight weight ;
-
-    void setGender( Gender newGender );
-    void setBreed( Breed newBreed );
 
 };

@@ -22,6 +22,9 @@
 #include "config.h"
 #include "Cat.h"
 
+#define MAX_CAT_NAME "kFcUPVRagzPlZAPBAKZyXxtVuETYWnHGEDvnPTEMNfnVjDUAFa"
+#define LONG_CAT_NAME "kFcUPVRagzPlZAPBAKZyXxtVuETYWnHGEDvnPTEMNfnVjDUAFaB"
+
 using namespace std;
 
 int main(){
@@ -29,7 +32,7 @@ int main(){
     cout << "Starting " << PROGRAM_NAME << endl;
 
     initializeDatabase();
-
+#ifdef DEBUG
     Cat badCat = Cat();
     assert(strlen(badCat.getName()) == 0);
     assert(badCat.getGender() == UNKNOWN_GENDER);
@@ -44,7 +47,6 @@ int main(){
     } catch(exception) {
         cout << "nullptr exception caught" << endl;
     }
-
     try {
         badCat.setName("");
         assert(false);
@@ -52,8 +54,36 @@ int main(){
         cout << "blank exception caught" << endl;
     }
 
+    badCat.setName("a");
+    badCat.setName(MAX_CAT_NAME);
+    try{
+        badCat.setName(LONG_CAT_NAME);
+        assert(false);
+    } catch(exception) {
+        cout << "Long cat name caught" << endl;
+    }
 
+    badCat.setGender(MALE);
+    try{
+        badCat.setGender(FEMALE);
+        assert(false);
+    } catch(exception) {
+        cout<< "Gender error caught" << endl;
+    }
 
+    badCat.setBreed(SPHYNX);
+    try{
+        badCat.setBreed(MAINE_COON);
+        assert(false);
+    } catch(exception) {
+        cout<< "Breed error caught" << endl;
+    }
+
+    cout << badCat.isFixed() << endl;
+    badCat.fixCat();
+    cout << badCat.isFixed() << endl;
+
+#endif
 
     addCat( new Cat("Loki", MALE, PERSIAN, 1.0));
     addCat( new Cat("Milo", MALE, MANX, 1.1));
@@ -68,53 +98,5 @@ int main(){
 
     cout << "Done with " << PROGRAM_NAME << endl;
 
-    /*
-    printf("Starting Animal Farm 1\n");
-#ifdef DEBUG
-    addCat( "", FEMALE, MAINE_COON, false, 10.0 ) ;
-   addCat( "MeowMeowMeowMeowMeowMeowMeowM", MALE, MANX, true, 8.7 );
-   addCat( "MeowMeowMeowMeowMeowMeowMeowMe", MALE, MANX, true, 8.7 );
-   addCat( "MeowMeowMeowMeowMeowMeowMeowMeo", MALE, MANX, true, 8.7 );
-   addCat( "Mewmew", FEMALE, PERSIAN, false, 0.0 ) ;
-   addCat( "Chili", UNKNOWN_GENDER, SHORTHAIR, false, 19.0 ) ;
-   addCat( "Chili", UNKNOWN_GENDER, SHORTHAIR, false, 19.0 ) ;
-
-   printCat(-1);
-   deleteCat(0);
-   deleteAllCats();
-   printAllCats();
-   printf("\n\n");
-#endif
-
-    addCat( "Loki", MALE, PERSIAN, true, 8.5, BLACK, WHITE, 101 ) ;
-    addCat( "Milo", MALE, MANX, true, 7.0, BLACK, RED, 102 ) ;
-    addCat( "Bella", FEMALE, MAINE_COON, true, 18.2, BLACK, BLUE, 103 ) ;
-    addCat( "Kali", FEMALE, SHORTHAIR, false, 9.2, BLACK, GREEN, 104 ) ;
-    addCat( "Trin", FEMALE, MANX, true, 12.2, BLACK, PINK, 105 ) ;
-    addCat( "Chili", UNKNOWN_GENDER, SHORTHAIR, false, 19.0, WHITE, BLACK, 106 ) ;
-
-    printAllCats();
-
-    int kali = findCat( "Kali" ) ;
-    updateCatName( kali, "Chili" ) ; // this should fail
-    printCat( kali ) ;
-    updateCatName( kali, "Capulet" ) ;
-    updateCatWeight( kali, 9.9 ) ;
-    fixCat( kali ) ;
-    printCat( kali ) ;
-
-    int chili = findCat( "Chili" ) ;
-    updateCatCollar1( chili, GREEN) ;
-    updateCatCollar2( chili, PINK ) ;
-    updateLicense( chili, 110 ) ;
-    printCat( chili ) ;
-
-    printAllCats() ;
-
-    deleteAllCats() ;
-    printAllCats() ;
-
-    printf("Done with Animal Farm 1\n") ;
-*/
 }
 

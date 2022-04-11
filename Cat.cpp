@@ -52,7 +52,7 @@ Weight Cat::getWeight() const noexcept {
 }
 
 bool Cat::isFixed() const noexcept {
-    return false;
+    return isCatFixed;
 }
 
 
@@ -65,10 +65,16 @@ void Cat::setName(const char *newName) {
 }
 
 void Cat::setGender(Gender newGender) {
+    if( gender != UNKNOWN_GENDER ) {
+        throw invalid_argument(PROGRAM_NAME ": Can't change known gender");
+    }
     Cat::gender = newGender;
 }
 
 void Cat::setBreed(Breed newBreed) {
+    if( breed != UNKNOWN_BREED ) {
+        throw invalid_argument(PROGRAM_NAME ": Can't change known breed");
+    }
     Cat::breed = newBreed;
 }
 
