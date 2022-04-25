@@ -10,6 +10,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 #define MAX 50
 
-extern const char* genderName( const enum Gender gender ) ;
+extern const char*
+genderName( const enum Gender gender ) ;
 extern const char* breedName( const enum Breed type ) ;
 extern const char* colorName( const enum Color col ) ;
