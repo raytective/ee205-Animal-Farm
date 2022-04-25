@@ -49,9 +49,9 @@ public:
 
 protected:
     char name[MAX_NAME] ;
-    enum Gender gender ;
-    enum Breed breed ;
-    bool isCatFixed ;
-    Weight weight ;
+    enum Gender gender = UNKNOWN_GENDER;
+    enum Breed breed = UNKNOWN_BREED;
+    bool isCatFixed = false;
+    Weight weight = UNKNOWN_WEIGHT;
 
 };

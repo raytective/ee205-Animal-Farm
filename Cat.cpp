@@ -24,10 +24,10 @@ using namespace std;
 Cat::Cat() {
     next = nullptr;
     memset(name, 0, MAX_NAME);
-    setGender( UNKNOWN_GENDER );
-    setBreed( UNKNOWN_BREED );
+    gender = UNKNOWN_GENDER;
+    breed = UNKNOWN_BREED;
     isCatFixed = false;
-    setWeight(UNKNOWN_WEIGHT );
+    weight = UNKNOWN_WEIGHT;
 }
 
 Cat::Cat(const char *newName, const Gender newGender, const Breed newBreed, const Weight newWeight) {
@@ -39,6 +39,10 @@ Cat::Cat(const char *newName, const Gender newGender, const Breed newBreed, cons
 }
 
 // Getters
+const char *Cat::getName() const noexcept {
+    return name;
+}
+
 Gender Cat::getGender() const noexcept {
     return gender;
 }
@@ -61,7 +65,6 @@ void Cat::setName(const char *newName) {
     validateName( newName );
     memset(name, 0, MAX_NAME);
     strcpy(Cat::name, newName );
-
 }
 
 void Cat::setGender(Gender newGender) {
@@ -78,15 +81,11 @@ void Cat::setBreed(Breed newBreed) {
     Cat::breed = newBreed;
 }
 
-
 void Cat::setWeight(Weight newWeight) {
+    validateWeight( newWeight );
     Cat::weight = newWeight;
-
 }
 
-const char *Cat::getName() const noexcept {
-    return name;
-}
 
 bool Cat::print() const noexcept {
     cout << setw(80) << setfill( '=' ) << "" << endl ;
@@ -108,6 +107,7 @@ bool Cat::fixCat() noexcept {
 
 Cat::~Cat() {
 }
+
 
 bool Cat::validateName(const char *newName) {
     if( newName == nullptr ) {
@@ -137,8 +137,8 @@ bool Cat::validateBreed(const Breed newBreed) {
 }
 
 bool Cat::validateWeight(const Weight newWeight) {
-    if( newWeight < 0 ) {
-        throw invalid_argument(PROGRAM_NAME ": Weight can't be < 0");
+    if( newWeight <= 0 ) {
+        throw invalid_argument(PROGRAM_NAME ": Weight can't be <= 0");
     }
     return true;
 }
@@ -150,7 +150,7 @@ bool Cat::validate() const noexcept {
         validateBreed( breed );
         validateWeight( weight );
     } catch (exception) {
-        /*cout<< PROGRAM_NAME ": Validation failed" << endl;*/
+        cout<< PROGRAM_NAME ": Validation failed" << endl;
         return false;
     }
 

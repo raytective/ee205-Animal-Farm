@@ -12,5 +12,4 @@
 
 void printCat( int index );
 void printAllCats();
-int findCat( const char* name);
-
+Cat* findCatByName( const char* name);

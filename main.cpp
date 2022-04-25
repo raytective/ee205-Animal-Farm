@@ -32,8 +32,9 @@ int main(){
     cout << "Starting " << PROGRAM_NAME << endl;
 
     initializeDatabase();
+
 #ifdef DEBUG
-    Cat badCat = Cat();
+    Cat badCat = Cat(); // :middle_finger:
     assert(strlen(badCat.getName()) == 0);
     assert(badCat.getGender() == UNKNOWN_GENDER);
     assert(badCat.getBreed() == UNKNOWN_BREED);
@@ -79,10 +80,32 @@ int main(){
         cout<< "Breed error caught" << endl;
     }
 
-    cout << badCat.isFixed() << endl;
+    // fix default cat and check before and after it's fixed
+    cout << "is not fixed? " << badCat.isFixed() << endl;
     badCat.fixCat();
-    cout << badCat.isFixed() << endl;
+    cout << "is fixed? " << badCat.isFixed() << endl;
 
+    try {
+        badCat.setWeight(0);
+        assert(false);
+    } catch(exception) {
+        cout<< "Weight error caught" << endl;
+    }
+
+
+    badCat.setWeight(1.0/1024.0);
+    cout << "Fractional weight? " << badCat.getWeight() << endl;
+
+    Cat goodCat = Cat("Zazzy", FEMALE, SPHYNX, 5.0);
+    assert(goodCat.validate());
+
+    try {
+        Cat testCat = Cat("", UNKNOWN_GENDER, UNKNOWN_BREED, UNKNOWN_WEIGHT);
+        testCat.validate();
+        assert(false);
+    } catch(exception) {
+        cout<< "Invalid cat caught" << endl;
+    }
 #endif
 
     addCat( new Cat("Loki", MALE, PERSIAN, 1.0));
@@ -91,6 +114,14 @@ int main(){
     addCat(new Cat("Kali", FEMALE, SHORTHAIR, 1.3));
     addCat(new Cat("Trin", FEMALE, MANX, 1.4));
     addCat(new Cat("Chili", MALE, SHORTHAIR, 1.5));
+
+    // confirm findCatByName returns correct cat
+    findCatByName("Bella")->print();
+
+    // confirm findCatByName returns null if cat isn't found
+    if(findCatByName("Belinda") == nullptr)
+        cout<< "Unable to find cat" << endl;
+
 
     printAllCats();
     deleteAllCats();

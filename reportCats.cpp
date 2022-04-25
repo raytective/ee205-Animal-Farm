@@ -8,6 +8,7 @@
 /// @author Rachel Watananbe <rkwatanao@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
+#include <cstring>
 #include "Cat.h"
 #include "catDatabase.h"
 #include "convertCats.h"
@@ -24,4 +25,19 @@ bool printAllCats() {
     }
 
     return true;
+}
+
+
+Cat* findCatByName( const char* name) {
+    Cat* current = catDatabaseHeadPointer;
+
+    while( current != nullptr ) {
+        if( strcmp(current->getName(),name) == 0 ) {
+            return current;
+        }
+        current = current->next;
+    }
+
+    return nullptr;
+
 }

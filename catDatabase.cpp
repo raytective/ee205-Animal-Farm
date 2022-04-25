@@ -48,7 +48,7 @@ bool validateDatabase() {
     return true;
 
 }
-
+/*
 Cat* findCatByName( const char* name ) {
     Cat* current = catDatabaseHeadPointer;
 
@@ -59,4 +59,4 @@ Cat* findCatByName( const char* name ) {
     }
     return nullptr;
 }
-
+*/
