@@ -24,7 +24,7 @@ using namespace std;
 Cat::Cat() {
     next = nullptr;
     memset(name, 0, MAX_NAME);
-    gender = UNKNOWN_GENDER;
+    gender = Gender::UNKNOWN_GENDER;
     breed = UNKNOWN_BREED;
     isCatFixed = false;
     weight = UNKNOWN_WEIGHT;
@@ -68,7 +68,7 @@ void Cat::setName(const char *newName) {
 }
 
 void Cat::setGender(Gender newGender) {
-    if( gender != UNKNOWN_GENDER ) {
+    if( gender != Gender::UNKNOWN_GENDER ) {
         throw invalid_argument(PROGRAM_NAME ": Can't change known gender");
     }
     Cat::gender = newGender;
@@ -93,8 +93,8 @@ bool Cat::print() const noexcept {
     cout << left ;
     cout << boolalpha ;
     FORMAT_LINE( "Cat", "name" ) << getName() << endl ;
-    FORMAT_LINE( "Cat", "gender" ) << genderName( getGender() ) << endl ;
-    FORMAT_LINE( "Cat", "breed" ) << breedName( getBreed() ) << endl ;
+    FORMAT_LINE( "Cat", "gender" ) <<  getGender() << endl ;
+    FORMAT_LINE( "Cat", "breed" ) << getBreed() << endl ;
     FORMAT_LINE( "Cat", "isFixed" ) << isFixed() << endl ;
     FORMAT_LINE( "Cat", "weight" ) << getWeight() << endl ;
     return true ;
@@ -123,7 +123,7 @@ bool Cat::validateName(const char *newName) {
 }
 
 bool Cat::validateGender(const Gender newGender){
-    if( newGender == UNKNOWN_GENDER ) {
+    if( newGender == Gender::UNKNOWN_GENDER ) {
         throw invalid_argument(PROGRAM_NAME ": Gender must be known");
     }
     return true;

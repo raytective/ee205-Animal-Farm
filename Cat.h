@@ -49,7 +49,7 @@ public:
 
 protected:
     char name[MAX_NAME] ;
-    enum Gender gender = UNKNOWN_GENDER;
+    enum Gender gender = Gender::UNKNOWN_GENDER;
     enum Breed breed = UNKNOWN_BREED;
     bool isCatFixed = false;
     Weight weight = UNKNOWN_WEIGHT;

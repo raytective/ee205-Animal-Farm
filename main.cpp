@@ -108,12 +108,12 @@ int main(){
     }
 #endif
 
-    addCat( new Cat("Loki", MALE, PERSIAN, 1.0));
-    addCat( new Cat("Milo", MALE, MANX, 1.1));
-    addCat(new Cat("Bella", FEMALE, MAINE_COON, 1.2));
-    addCat(new Cat("Kali", FEMALE, SHORTHAIR, 1.3));
-    addCat(new Cat("Trin", FEMALE, MANX, 1.4));
-    addCat(new Cat("Chili", MALE, SHORTHAIR, 1.5));
+    addCat( new Cat("Loki", Gender::MALE, PERSIAN, 1.0));
+    addCat( new Cat("Milo", Gender::MALE, MANX, 1.1));
+    addCat(new Cat("Bella", Gender::FEMALE, MAINE_COON, 1.2));
+    addCat(new Cat("Kali", Gender::FEMALE, SHORTHAIR, 1.3));
+    addCat(new Cat("Trin", Gender::FEMALE, MANX, 1.4));
+    addCat(new Cat("Chili", Gender::MALE, SHORTHAIR, 1.5));
 
     // confirm findCatByName returns correct cat
     findCatByName("Bella")->print();

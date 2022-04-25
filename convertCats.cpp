@@ -13,6 +13,7 @@
 #include "config.h"
 #include "convertCats.h"
 
+/*
 const char* genderName( const enum Gender gen ) {
 
     static char gender[MAX];
@@ -94,3 +95,5 @@ const char* colorName( const enum Color col ) {
     return color;
 
 }
+
+ */
