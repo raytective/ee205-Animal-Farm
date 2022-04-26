@@ -10,6 +10,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 #pragma once
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -17,8 +18,15 @@ using namespace std;
 #define MAX_NAME (50)       /// @TODO delete after u get the name stuff down
 #define UNKNOWN_WEIGHT (-1)
 
-#define FORMAT_LINE_FOR_DUMP (className, member ) cout << setfill( ' ' ) << left << std:boolalpha << std:setw(8 ) << (className) << setw( 20 ) << (member) << setw( 52)
-#define PRINT_HEADING_FOR_DUMP std::cout << std::setw(80) << std::setfill( '=' ) << "" << std::endl
+#define FORMAT_LINE_FOR_DUMP( className, member )         \
+    cout << setfill( ' ' )                  \
+              << left                       \
+              << boolalpha                  \
+              << setw( 8) << (className)    \
+              << setw(20) << (member)       \
+              << setw(52)
+
+#define PRINT_HEADING_FOR_DUMP std::cout << setw(80) << setfill( '=' ) << "" << endl
 
 typedef float Weight;
 typedef int NumCats;

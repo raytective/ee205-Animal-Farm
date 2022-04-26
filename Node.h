@@ -8,16 +8,36 @@
 /// @author Rachel Watanabe <rkwatana@hawaii.edu>
 /// @date   25_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
-
+#include "config.h"
 
 class Node {
 public:
-    virtual void dump() const;
-    virtual bool validate() const noexcept;
-    virtual bool operator>( const Node &rightSide );
+    virtual void dump() const {
+        PRINT_HEADING_FOR_DUMP;
+        FORMAT_LINE_FOR_DUMP( "Node", "this" ) << this << endl;
+    }
+
+    virtual bool validate() const noexcept {
+        if( next == nullptr ) {
+            return true;
+        }
+        if( next == next->next ) {
+            return false;
+        }
+        return true;
+    }
+
+    virtual bool operator>( const Node &rightSide ) {
+        return compareByAddress(this, &rightSide);
+    }
 
 protected:
-    static bool compareByAddress( const Node *node1, const Node *node2 );
+    static bool compareByAddress( const Node *node1, const Node *node2 ) {
+        if( node1 > node2 ) {
+            return true;
+        }
+        return false;
+    }
 
     Node* next = nullptr;
 };
