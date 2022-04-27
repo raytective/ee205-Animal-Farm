@@ -9,3 +9,77 @@
 /// @date   26_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
 #include "Animal.h"
+static const string KINGDOM_NAME = "Animalia";
+
+// @TODO add in maxweight once we get cat up and running again
+
+Animal::Animal(const Weight::t_weight newMaxWeight, const string &newClassification, const string &newSpecies) {
+    classification = newClassification;
+    species = newSpecies;
+}
+
+Animal::Animal(const Gender newGender, const Weight::t_weight newWeight, const Weight::t_weight newMaxWeight,
+               const string &newClassification, const string &newSpecies) {
+    setGender(newGender);
+    setWeight(newWeight);
+    classification = newClassification;
+    species = newSpecies;
+}
+
+string Animal::getKingdom() const noexcept {
+    return ::KINGDOM_NAME;
+}
+
+string Animal::getClassification() const noexcept {
+    return classification;
+}
+
+string Animal::getSpecies() const noexcept {
+    return species;
+}
+
+Gender Animal::getGender() const noexcept {
+    return gender;
+}
+
+Weight::t_weight Animal::getWeight() const noexcept {
+    return weight;
+}
+
+void Animal::setWeight(const Weight::t_weight newWeight) {
+    weight = newWeight;
+}
+
+void Animal::dump() const noexcept {
+    FORMAT_LINE_FOR_DUMP( "Animal", "this" ) << this << endl;
+    FORMAT_LINE_FOR_DUMP( "Animal","kingdom" ) << getKingdom() << endl;
+    FORMAT_LINE_FOR_DUMP( "Animal", "classification" ) << getClassification() << endl;
+    FORMAT_LINE_FOR_DUMP( "Animal", "species" ) << getSpecies() << endl;
+    FORMAT_LINE_FOR_DUMP( "Animal", "gender" ) << getGender() << endl;
+    FORMAT_LINE_FOR_DUMP( "Animal", "weight" ) << getWeight() << endl;
+}
+
+bool Animal::validate() const noexcept {
+    ///@TODO do validation
+    return true;
+}
+
+/// @TODO CHECK AFTER CLASS IF THIS IS CORRECT VALIDATION
+bool Animal::validateClassification(const string &checkClassification) noexcept {
+    if( checkClassification != "Animalia" ) {
+        return false;
+    }
+    return true;
+}
+
+bool Animal::validateSpecies(const string &checkSpecies) noexcept {
+    if( checkSpecies !=  "Felis Catus" ) {
+        return false;
+    }
+    return true;
+}
+
+void Animal::setGender(const Gender newGender) {
+    gender = newGender;
+
+}
