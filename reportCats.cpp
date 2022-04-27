@@ -13,6 +13,7 @@
 #include "catDatabase.h"
 #include "convertCats.h"
 
+/*
 using namespace std;
 
 bool printAllCats() {
@@ -41,3 +42,5 @@ Cat* findCatByName( const char* name) {
     return nullptr;
 
 }
+
+*/

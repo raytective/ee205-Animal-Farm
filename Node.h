@@ -47,5 +47,3 @@ protected:
 
     Node* next = nullptr;
 };
-
-

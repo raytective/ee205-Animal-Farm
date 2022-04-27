@@ -14,11 +14,7 @@
 
 using namespace std;
 
-typedef int NumCats;
-
 #define PROGRAM_NAME "Animal Farm 3"
-#define MAX_NAME (50)       /// @TODO delete after u get the name stuff down
-
 
 #define FORMAT_LINE_FOR_DUMP( className, member )         \
     cout << setfill( ' ' )                  \
@@ -56,8 +52,6 @@ inline ostream& operator<<( ostream& lhs_stream, const Gender& rhs_Gender ) {
     return lhs_stream;
 
 }
-
-
 
 enum class Color { UNKNOWN_COLOR=0, BLACK, BROWN, WHITE, RED, BLUE, GREEN,
                     GINGER, CREAM, CINNAMON, CALICO };

@@ -10,17 +10,13 @@
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
 #include <iostream>
-#include <assert.h>
-#include <cstring>
 
-#include "catDatabase.h"
-#include "addCats.h"
-#include "reportCats.h"
-#include "updateCats.h"
-#include "deleteCats.h"
-#include "convertCats.h"
-#include "config.h"
+#include "Animal.h"
 #include "Cat.h"
+#include "config.h"
+#include "SinglyLinkedList.h"
+#include "List.h"
+#include "Node.h"
 
 #define MAX_CAT_NAME "kFcUPVRagzPlZAPBAKZyXxtVuETYWnHGEDvnPTEMNfnVjDUAFa"
 #define LONG_CAT_NAME "kFcUPVRagzPlZAPBAKZyXxtVuETYWnHGEDvnPTEMNfnVjDUAFaB"
@@ -31,6 +27,30 @@ int main(){
 
     cout << "Starting " << PROGRAM_NAME << endl;
 
+    SinglyLinkedList catDB ;
+    cout << "text" << endl;
+    catDB.push_front( new Cat( "Loki", Color::CREAM, true, Gender::MALE, 1.0 ) ) ;
+    cout << "text" << endl;
+    catDB.push_front( new Cat( "Milo", Color::BLACK, true, Gender::MALE, 1.1 ) ) ;
+    cout << "text" << endl;
+    catDB.push_front( new Cat( "Bella", Color::BROWN, true, Gender::FEMALE, 1.2 ) ) ;
+    cout << "text" << endl;
+    catDB.push_front( new Cat( "Kali", Color::CALICO, true, Gender::FEMALE, 1.3 ) ) ;
+    cout << "text" << endl;
+    catDB.push_front( new Cat( "Trin", Color::WHITE, true, Gender::FEMALE, 1.4 ) ) ;
+    cout << "text" << endl;
+    catDB.insert_after(catDB.get_first(), new Cat( "Chili", Color::GINGER, true,
+                                                   Gender::MALE, 1.5 ) );
+    for( Animal* pAnimal = (Animal*)catDB.get_first() ; pAnimal != nullptr ; pAnimal =
+                                                                                     (Animal*)List::get_next( (Node*)pAnimal ) ) {
+        cout << pAnimal->speak() << endl;
+    }
+    catDB.validate() ;
+    catDB.dump() ;
+    catDB.deleteAllNodes() ;
+    catDB.dump() ;
+
+    /*
     initializeDatabase();
 
 #ifdef DEBUG
@@ -126,7 +146,7 @@ int main(){
     printAllCats();
     deleteAllCats();
     printAllCats();
-
+*/
     cout << "Done with " << PROGRAM_NAME << endl;
 
 }

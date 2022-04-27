@@ -12,6 +12,7 @@
 #include "Cat.h"
 using namespace std;
 
+/*
 bool addCat( Cat* newCat ) {
     validateDatabase();
     newCat->validate();
@@ -21,3 +22,4 @@ bool addCat( Cat* newCat ) {
     validateDatabase();
     return true;
 }
+*/

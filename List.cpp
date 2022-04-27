@@ -57,7 +57,7 @@ Node *List::get_first() const noexcept {
 
 }
 
-void List::deleteAllNotes() noexcept {
+void List::deleteAllNodes() noexcept {
     assert( validate() );
     while( head != nullptr ) {
         pop_front();

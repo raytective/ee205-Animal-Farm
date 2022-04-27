@@ -10,10 +10,11 @@
 ///////////////////////////////////////////////////////////////////////////////
 #pragma once
 #include "catDatabase.h"
-
+/*
 extern int updateCatName(int index, const char* newName);
 extern int fixCat(int index);
 extern int updateCatWeight(int index, float newWeight);
 int updateCatCollar1( int index, enum Color );
 int updateCatCollar2( int index, enum Color );
 extern int updateLicense( int index, unsigned long long newLicense );
+ */

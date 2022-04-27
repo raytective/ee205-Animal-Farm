@@ -10,7 +10,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 #include "Mammal.h"
 
-static const string MAMMAL_NAME = "Mammilian";
+const string Mammal::MAMMAL_NAME = "Mammilian";
 
 
 Color Mammal::getColor() const noexcept {

@@ -11,13 +11,14 @@
 #include <stdexcept>
 #include "Cat.h"
 
+/*
 Cat* catDatabaseHeadPointer = nullptr;
 
 void initializeDatabase() {
     if( catDatabaseHeadPointer != nullptr ){
         throw std::logic_error(PROGRAM_NAME ": Database already empty");
     }
-/* what else is supposed to happen here i feel crazy */
+
 }
 
 bool isCatInDatabase( const Cat* aCat ) {
@@ -48,6 +49,9 @@ bool validateDatabase() {
     return true;
 
 }
+*/
+
+
 /*
 Cat* findCatByName( const char* name ) {
     Cat* current = catDatabaseHeadPointer;

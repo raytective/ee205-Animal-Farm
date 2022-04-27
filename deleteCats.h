@@ -10,6 +10,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 #pragma once
 
+/*
 bool deleteAllCats();
-void deleteCat(int index);
+void deleteCat(int index);*/
 

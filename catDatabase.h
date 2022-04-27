@@ -12,11 +12,11 @@
 
 #include "Cat.h"
 
-extern NumCats currentCats;
+/*extern NumCats currentCats;
 extern Cat* catDatabaseHeadPointer;
 
 void initializeDatabase();
 bool validateDatabase();
-/*Cat* findCatByName( const char* name );*/
+Cat* findCatByName( const char* name );*/
 
 

@@ -9,7 +9,7 @@
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
 #pragma once
-
+/*
 void printCat( int index );
 void printAllCats();
-Cat* findCatByName( const char* name);
+Cat* findCatByName( const char* name); */

@@ -9,27 +9,63 @@
 /// @date   05_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
 #pragma once
-
+#include <cstring>
+#include "Mammal.h"
 #include "config.h"
 
-class Cat {
+
+class Cat: public Mammal {
 public:
+    static const string SPECIES_NAME;
+    static const Weight::t_weight MAX_WEIGHT;
 
-    Cat* next;
+public:
+    explicit Cat(const string &newName) :
+            Mammal(MAX_WEIGHT, SPECIES_NAME) {
+        if (validateName(newName) == false) {
+            throw out_of_range("Cat must have name");
+        }
+        name = newName;
+        isCatFixed = false;
+    }
 
-    Cat();
-    Cat( const char* newName
-         ,const Gender newGender
-         ,const Breed newBreed
-         ,const float newWeight );
+    Cat( const string &newName, const Color newColor,
+         const bool newIsFixed, const Gender newGender,
+         const Weight::t_weight newWeight ): Mammal( newColor, newGender, newWeight,
+                                                     MAX_WEIGHT, SPECIES_NAME ) {
+        if( validateName( newName ) == false ) {
+            throw out_of_range( "Cat must have name" );
+        }
+        name = newName;
+        isCatFixed = newIsFixed;
+    }
 
-    const char* getName() const noexcept;
+    string getName() const noexcept;
+    void setName(const string &newName);
+
+    bool isFixed() const noexcept;
+    void fixCat() noexcept;
+
+    string speak() const noexcept override;
+    void dump() const noexcept override;
+    bool validate() const noexcept override;
+
+    static bool validateName(const string &newName);
+
+protected:
+    string name;
+    bool isCatFixed;
+
+};
+
+    /*
+    string getName() const noexcept;
     Gender getGender() const noexcept;
     Breed getBreed() const noexcept;
     bool isFixed() const noexcept;
     float getWeight() const noexcept;
 
-    void setName( const char* newName );
+    void setName( const string &newName );
     bool fixCat() noexcept;
     void setWeight ( float newWeight );
 
@@ -48,11 +84,8 @@ public:
     void setBreed( Breed newBreed );
 
 protected:
-    char name[MAX_NAME] ;
-    enum Gender gender = Gender::UNKNOWN_GENDER;
-    enum Breed breed = UNKNOWN_BREED;
+    string name;
     bool isCatFixed = false;
-    float weight = -1;
-    //float weight = UNKNOWN_WEIGHT;
 
 };
+     */

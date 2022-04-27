@@ -9,6 +9,7 @@
 /// @date   26_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
 #include "Animal.h"
+
 static const string KINGDOM_NAME = "Animalia";
 
 // @TODO add in maxweight once we get cat up and running again

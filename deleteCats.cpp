@@ -14,6 +14,7 @@
 using namespace std;
 #include <iostream>
 
+/*
 bool deleteAllCats() {
     Cat* current = catDatabaseHeadPointer;
     Cat* tmp;
@@ -59,3 +60,5 @@ bool deleteCat(Cat* deletedCat ) {
     return false;
 
 }
+
+*/

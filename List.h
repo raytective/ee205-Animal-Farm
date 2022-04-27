@@ -18,7 +18,7 @@ public:
     bool isIn ( Node *aNode ) const;
     bool isSorted() const noexcept;
     Node* get_first() const noexcept;
-    void deleteAllNotes() noexcept;
+    void deleteAllNodes() noexcept;
 
     /// abstract?
     virtual Node* pop_front() noexcept=0;
