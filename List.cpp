@@ -40,13 +40,14 @@ bool List::isIn(Node *aNode) const {
 }
 
 bool List::isSorted() const noexcept {
+    for( Node* current = head; current->next != nullptr; current = current->next) {
+        if( current->next > current) {
+            return false;
+        }
+    }
 
-
-    return false;
+    return true;
 }
-
-
-
 
 Node *List::get_first() const noexcept {
     if( head == nullptr ) {

@@ -19,6 +19,7 @@ public:
     Node* get_first() const noexcept;
     void deleteAllNotes() noexcept;
 
+    /// abstract?
     virtual Node* pop_front() noexcept=0;
     virtual void dump() const noexcept=0;
     virtual bool validate() const noexcept=0;
