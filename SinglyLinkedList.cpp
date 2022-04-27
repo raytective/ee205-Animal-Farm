@@ -9,3 +9,21 @@
 /// @date   26_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
 #include "SinglyLinkedList.h"
+#include <cassert>
+
+void SinglyLinkedList::push_front(Node *newNode) {
+    if( newNode == nullptr ) {
+        throw invalid_argument( "newNode can't be null" );
+    }
+    if( newNode->validate() == false ) {
+        throw domain_error( "newNode isn't valid" );
+    }
+    if(isIn( newNode ) == true ) {
+        throw logic_error( "Node already exists in container" );
+    }
+
+
+
+}
+
+

@@ -8,6 +8,7 @@
 /// @author Rachel Watanabe <rkwatana@hawaii.edu>
 /// @date   25_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
+#pragma once
 #include "config.h"
 /// FINISHED ; RECHECK LATER
 

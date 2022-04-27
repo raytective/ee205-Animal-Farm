@@ -8,6 +8,7 @@
 /// @author Rachel Watanabe <rkwatana@hawaii.edu>
 /// @date   26_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
+#pragma once
 #include "Node.h"
 
 class List {

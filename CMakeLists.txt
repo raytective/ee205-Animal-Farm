@@ -3,4 +3,4 @@ project(ee205_lab_10b_animal_farm)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(ee205_lab_10b_animal_farm main.cpp addCats.cpp addCats.h config.h catDatabase.cpp catDatabase.h deleteCats.cpp deleteCats.h reportCats.cpp reportCats.h updateCats.cpp updateCats.h convertCats.cpp convertCats.h Cat.cpp Cat.h Weight.cpp Weight.h Node.h List.cpp List.h SinglyLinkedList.cpp SinglyLinkedList.h)
+add_executable(ee205_lab_10b_animal_farm main.cpp addCats.cpp addCats.h config.h catDatabase.cpp catDatabase.h deleteCats.cpp deleteCats.h reportCats.cpp reportCats.h updateCats.cpp updateCats.h convertCats.cpp convertCats.h Cat.cpp Cat.h Weight.cpp Weight.h Node.h List.cpp List.h SinglyLinkedList.cpp SinglyLinkedList.h Animal.cpp Animal.h)
