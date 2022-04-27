@@ -12,7 +12,7 @@
 #include <cassert>
 
 bool List::empty() const noexcept {
-    if( count == 0) {
+    if( count == 0 && head == nullptr ) {
         return true;
     }
 
