@@ -9,8 +9,12 @@
 /// @date   25_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
 #include "config.h"
+/// FINISHED ; RECHECK LATER
 
 class Node {
+    friend class List;
+    friend class SinglyLinkedList;
+
 public:
     virtual void dump() const {
         PRINT_HEADING_FOR_DUMP;
