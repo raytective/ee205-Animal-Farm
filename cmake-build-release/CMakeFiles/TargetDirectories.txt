@@ -1,0 +1,3 @@
+/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles/ee205_lab_10b_animal_farm.dir
+/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles/edit_cache.dir
+/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles/rebuild_cache.dir
