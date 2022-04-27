@@ -14,9 +14,11 @@
 
 using namespace std;
 
+typedef int NumCats;
+
 #define PROGRAM_NAME "Animal Farm 3"
 #define MAX_NAME (50)       /// @TODO delete after u get the name stuff down
-#define UNKNOWN_WEIGHT (-1)
+
 
 #define FORMAT_LINE_FOR_DUMP( className, member )         \
     cout << setfill( ' ' )                  \
@@ -27,10 +29,6 @@ using namespace std;
               << setw(52)
 
 #define PRINT_HEADING_FOR_DUMP std::cout << setw(80) << setfill( '=' ) << "" << endl
-
-typedef float Weight;
-typedef int NumCats;
-
 
 enum Breed{ UNKNOWN_BREED=0, MAINE_COON, MANX,
     SHORTHAIR, PERSIAN, SPHYNX };

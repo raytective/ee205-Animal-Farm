@@ -21,17 +21,17 @@ public:
     Cat( const char* newName
          ,const Gender newGender
          ,const Breed newBreed
-         ,const Weight newWeight );
+         ,const float newWeight );
 
     const char* getName() const noexcept;
     Gender getGender() const noexcept;
     Breed getBreed() const noexcept;
     bool isFixed() const noexcept;
-    Weight getWeight() const noexcept;
+    float getWeight() const noexcept;
 
     void setName( const char* newName );
     bool fixCat() noexcept;
-    void setWeight ( Weight newWeight );
+    void setWeight ( float newWeight );
 
     bool print() const noexcept;
     bool validate() const noexcept;
@@ -39,7 +39,7 @@ public:
     static bool validateName( const char *newName );
     static bool validateGender( const Gender newGender );
     static bool validateBreed( const Breed newBreed );
-    static bool validateWeight( const Weight newWeight );
+    static bool validateWeight( const float newWeight );
 
     virtual ~Cat();
 
@@ -52,6 +52,7 @@ protected:
     enum Gender gender = Gender::UNKNOWN_GENDER;
     enum Breed breed = UNKNOWN_BREED;
     bool isCatFixed = false;
-    Weight weight = UNKNOWN_WEIGHT;
+    float weight = -1;
+    //float weight = UNKNOWN_WEIGHT;
 
 };

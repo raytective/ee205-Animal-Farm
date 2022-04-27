@@ -27,10 +27,11 @@ Cat::Cat() {
     gender = Gender::UNKNOWN_GENDER;
     breed = UNKNOWN_BREED;
     isCatFixed = false;
-    weight = UNKNOWN_WEIGHT;
+    weight = -1;
+    //weight = UNKNOWN_WEIGHT;
 }
 
-Cat::Cat(const char *newName, const Gender newGender, const Breed newBreed, const Weight newWeight) {
+Cat::Cat(const char *newName, const Gender newGender, const Breed newBreed, const float newWeight) {
     setName( newName );
     setGender( newGender );
     setBreed( newBreed );
@@ -51,7 +52,7 @@ Breed Cat::getBreed() const noexcept {
     return breed;
 }
 
-Weight Cat::getWeight() const noexcept {
+float Cat::getWeight() const noexcept {
     return weight;
 }
 
@@ -81,7 +82,7 @@ void Cat::setBreed(Breed newBreed) {
     Cat::breed = newBreed;
 }
 
-void Cat::setWeight(Weight newWeight) {
+void Cat::setWeight(float newWeight) {
     validateWeight( newWeight );
     Cat::weight = newWeight;
 }
@@ -136,7 +137,7 @@ bool Cat::validateBreed(const Breed newBreed) {
     return true;
 }
 
-bool Cat::validateWeight(const Weight newWeight) {
+bool Cat::validateWeight(const float newWeight) {
     if( newWeight <= 0 ) {
         throw invalid_argument(PROGRAM_NAME ": Weight can't be <= 0");
     }
