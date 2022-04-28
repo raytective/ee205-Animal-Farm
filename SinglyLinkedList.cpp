@@ -28,8 +28,14 @@ void SinglyLinkedList::push_front(Node *newNode) {
         throw logic_error( "Node already exists in container" );
     }
 
-    newNode->next = head;
-    head = newNode;
+    if( head != nullptr ) {
+        newNode->next = head;
+        head = newNode;
+    } else {
+        newNode->next = nullptr;
+        head = newNode;
+    }
+    count++;
 }
 
 Node *SinglyLinkedList::pop_front() noexcept {
@@ -41,6 +47,7 @@ Node *SinglyLinkedList::pop_front() noexcept {
     head = head->next;
 
     delete temp;
+    count--;
 
     return head;
 }
@@ -59,22 +66,29 @@ void SinglyLinkedList::insert_after(Node *currentNode, Node *newNode) {
     if( newNode == nullptr ) {
         throw invalid_argument( "Can't insert node to nullptr" );
     }
-    if( newNode->validate() == false ) {
+    if( newNode->Node::validate() == false ) {
         throw domain_error( "New node not valid" );
     }
     if( isIn( newNode ) == true ) {
         throw logic_error( "Node already in list :(" );
     }
 
-/// help me
+    newNode->next = currentNode->next;
+    currentNode->next = newNode;
+    count++;
+    /*
     Node* temp = currentNode->next;
     currentNode->next = newNode;
     newNode = temp;
+    count++;*/
 
 }
 
 void SinglyLinkedList::dump() const noexcept {
     cout << "SinglyLinkedList:  head=[" << head << "]" << endl;
+    for( Node* temp=head ; temp != nullptr ; temp=temp->next ) {
+        temp->dump();
+    }
 }
 
 bool SinglyLinkedList::validate() const noexcept {

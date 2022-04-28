@@ -119,12 +119,6 @@
 		<Unit filename="/tmp/tmp.LNPPZbzRZX/Weight.h">
 			<Option target="ee205_lab_10b_animal_farm"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.LNPPZbzRZX/addCats.cpp">
-			<Option target="ee205_lab_10b_animal_farm"/>
-		</Unit>
-		<Unit filename="/tmp/tmp.LNPPZbzRZX/addCats.h">
-			<Option target="ee205_lab_10b_animal_farm"/>
-		</Unit>
 		<Unit filename="/tmp/tmp.LNPPZbzRZX/catDatabase.cpp">
 			<Option target="ee205_lab_10b_animal_farm"/>
 		</Unit>

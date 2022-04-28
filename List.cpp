@@ -8,8 +8,9 @@
 /// @author Rachel Watanabe <rkwatana@hawaii.edu>
 /// @date   26_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
-#include "List.h"
 #include <cassert>
+#include "List.h"
+#include "config.h"
 
 bool List::empty() const noexcept {
     if( count == 0 && head == nullptr ) {
@@ -29,7 +30,7 @@ bool List::isIn(Node *aNode) const {
     }
 
     Node* current = head;
-    while( head != nullptr ) {
+    while( current != nullptr ) {
         if( current == aNode ) {
             return true;
         }
@@ -53,7 +54,7 @@ Node *List::get_first() const noexcept {
     if( head == nullptr ) {
         return nullptr;
     }
-    return head->next;
+    return head;
 
 }
 

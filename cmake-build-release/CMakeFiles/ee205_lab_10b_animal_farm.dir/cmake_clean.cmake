@@ -11,8 +11,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/ee205_lab_10b_animal_farm.dir/SinglyLinkedList.cpp.o.d"
   "CMakeFiles/ee205_lab_10b_animal_farm.dir/Weight.cpp.o"
   "CMakeFiles/ee205_lab_10b_animal_farm.dir/Weight.cpp.o.d"
-  "CMakeFiles/ee205_lab_10b_animal_farm.dir/addCats.cpp.o"
-  "CMakeFiles/ee205_lab_10b_animal_farm.dir/addCats.cpp.o.d"
   "CMakeFiles/ee205_lab_10b_animal_farm.dir/catDatabase.cpp.o"
   "CMakeFiles/ee205_lab_10b_animal_farm.dir/catDatabase.cpp.o.d"
   "CMakeFiles/ee205_lab_10b_animal_farm.dir/convertCats.cpp.o"

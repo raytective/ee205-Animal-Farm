@@ -44,5 +44,5 @@ private:
     string species;
     string classification;
     Gender gender = Gender::UNKNOWN_GENDER;
-    Weight::t_weight weight;
+    Weight weight;
 };

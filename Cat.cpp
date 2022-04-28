@@ -13,13 +13,52 @@
 #include <stdexcept>
 #include "Cat.h"
 
-
-#define FORMAT_LINE( className, member ) cout << setw(8) << (className) << setw(20) << (member) << setw(52)
-
 using namespace std;
 
+const string Cat::SPECIES_NAME = "Felis Catus";
+const Weight::t_weight Cat::MAX_WEIGHT = 40;
 
 
+string Cat::getName() const noexcept {
+    return name;
+}
+
+void Cat::setName(const string &newName) {
+    if( newName == "" ) {
+        throw invalid_argument( "Can't give Cat a blank name" );
+    }
+    name = newName;
+}
+
+bool Cat::isFixed() const noexcept {
+    return isCatFixed;
+}
+
+void Cat::fixCat() noexcept {
+    Cat::isCatFixed = true;
+}
+
+string Cat::speak() const noexcept {
+    return "Meow";
+}
+
+void Cat::dump() const noexcept {
+    Mammal::dump();
+
+    FORMAT_LINE_FOR_DUMP( "Cat", "name" ) << name << endl;
+    FORMAT_LINE_FOR_DUMP( "Cat", "isFixed" ) << isFixed() << endl;
+}
+
+bool Cat::validate() const noexcept {
+    return true;
+}
+
+bool Cat::validateName(const string &newName) {
+    if( newName.empty() == true ) {
+        return false;
+    }
+    return true;
+}
 
 
 
@@ -163,48 +202,3 @@ bool Cat::validate() const noexcept {
 }
 
 */
-
-
-const string Cat::SPECIES_NAME = "Felis Catus";
-const Weight::t_weight Cat::MAX_WEIGHT = 40;
-
-
-string Cat::getName() const noexcept {
-    return name;
-}
-
-void Cat::setName(const string &newName) {
-    if( newName == "" ) {
-        throw invalid_argument( "Can't give Cat a blank name" );
-    }
-    name = newName;
-}
-
-bool Cat::isFixed() const noexcept {
-    return isCatFixed;
-}
-
-void Cat::fixCat() noexcept {
-    isCatFixed = true;
-}
-
-string Cat::speak() const noexcept {
-    return "Meow";
-}
-
-void Cat::dump() const noexcept {
-    FORMAT_LINE_FOR_DUMP( "Cat", "name" ) << name << endl;
-    FORMAT_LINE_FOR_DUMP( "Cat", "isFixed" ) << isCatFixed << endl;
-}
-
-bool Cat::validate() const noexcept {
-    return true;
-}
-
-bool Cat::validateName(const string &newName) {
-    if( newName.empty() == true ) {
-        return false;
-    }
-    return true;
-}
-

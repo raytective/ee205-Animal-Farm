@@ -26,9 +26,10 @@ using namespace std;
 
 #define PRINT_HEADING_FOR_DUMP std::cout << setw(80) << setfill( '=' ) << "" << endl
 
-enum Breed{ UNKNOWN_BREED=0, MAINE_COON, MANX,
+/*
+    enum Breed{ UNKNOWN_BREED=0, MAINE_COON, MANX,
     SHORTHAIR, PERSIAN, SPHYNX };
-
+*/
 
 /// @TODO DELETE CONVERTCATS GENDER/BREED STUFF >> OR transfer??
 enum class Gender { UNKNOWN_GENDER=0, MALE, FEMALE };

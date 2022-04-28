@@ -13,7 +13,6 @@
 #include "Mammal.h"
 #include "config.h"
 
-
 class Cat: public Mammal {
 public:
     static const string SPECIES_NAME;
@@ -57,35 +56,3 @@ protected:
     bool isCatFixed;
 
 };
-
-    /*
-    string getName() const noexcept;
-    Gender getGender() const noexcept;
-    Breed getBreed() const noexcept;
-    bool isFixed() const noexcept;
-    float getWeight() const noexcept;
-
-    void setName( const string &newName );
-    bool fixCat() noexcept;
-    void setWeight ( float newWeight );
-
-    bool print() const noexcept;
-    bool validate() const noexcept;
-
-    static bool validateName( const char *newName );
-    static bool validateGender( const Gender newGender );
-    static bool validateBreed( const Breed newBreed );
-    static bool validateWeight( const float newWeight );
-
-    virtual ~Cat();
-
-    void setGender( Gender newGender );
-
-    void setBreed( Breed newBreed );
-
-protected:
-    string name;
-    bool isCatFixed = false;
-
-};
-     */

@@ -22,7 +22,7 @@ Animal::Animal(const Weight::t_weight newMaxWeight, const string &newClassificat
 Animal::Animal(const Gender newGender, const Weight::t_weight newWeight, const Weight::t_weight newMaxWeight,
                const string &newClassification, const string &newSpecies) {
     setGender(newGender);
-    setWeight(newWeight);
+    weight = Weight( newWeight, newMaxWeight );
     classification = newClassification;
     species = newSpecies;
 }
@@ -44,14 +44,16 @@ Gender Animal::getGender() const noexcept {
 }
 
 Weight::t_weight Animal::getWeight() const noexcept {
-    return weight;
+    return weight.getWeight();
 }
 
 void Animal::setWeight(const Weight::t_weight newWeight) {
-    weight = newWeight;
+    weight.setWeight(newWeight);
 }
 
 void Animal::dump() const noexcept {
+    Node::dump();
+
     FORMAT_LINE_FOR_DUMP( "Animal", "this" ) << this << endl;
     FORMAT_LINE_FOR_DUMP( "Animal","kingdom" ) << getKingdom() << endl;
     FORMAT_LINE_FOR_DUMP( "Animal", "classification" ) << getClassification() << endl;
@@ -67,14 +69,14 @@ bool Animal::validate() const noexcept {
 
 /// @TODO CHECK AFTER CLASS IF THIS IS CORRECT VALIDATION
 bool Animal::validateClassification(const string &checkClassification) noexcept {
-    if( checkClassification != "Animalia" ) {
+    if( checkClassification.empty() == true ) {
         return false;
     }
     return true;
 }
 
 bool Animal::validateSpecies(const string &checkSpecies) noexcept {
-    if( checkSpecies !=  "Felis Catus" ) {
+    if( checkSpecies.empty() == true ) {
         return false;
     }
     return true;

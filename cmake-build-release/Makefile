@@ -273,30 +273,6 @@ Weight.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/Weight.cpp.s
 .PHONY : Weight.cpp.s
 
-addCats.o: addCats.cpp.o
-.PHONY : addCats.o
-
-# target to build an object file
-addCats.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/addCats.cpp.o
-.PHONY : addCats.cpp.o
-
-addCats.i: addCats.cpp.i
-.PHONY : addCats.i
-
-# target to preprocess a source file
-addCats.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/addCats.cpp.i
-.PHONY : addCats.cpp.i
-
-addCats.s: addCats.cpp.s
-.PHONY : addCats.s
-
-# target to generate assembly for a file
-addCats.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/addCats.cpp.s
-.PHONY : addCats.cpp.s
-
 catDatabase.o: catDatabase.cpp.o
 .PHONY : catDatabase.o
 
@@ -468,9 +444,6 @@ help:
 	@echo "... Weight.o"
 	@echo "... Weight.i"
 	@echo "... Weight.s"
-	@echo "... addCats.o"
-	@echo "... addCats.i"
-	@echo "... addCats.s"
 	@echo "... catDatabase.o"
 	@echo "... catDatabase.i"
 	@echo "... catDatabase.s"
