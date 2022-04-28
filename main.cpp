@@ -15,6 +15,7 @@
 #include "SinglyLinkedList.h"
 #include "List.h"
 #include "Node.h"
+#include <cassert>
 
 using namespace std;
 
@@ -22,6 +23,11 @@ int main(){
 
     cout << "Starting " << PROGRAM_NAME << endl;
 
+//#ifdef DEBUG
+    Cat testCat = Cat("Loki", Color::CALICO, false, Gender::MALE, 5.0 );
+
+    assert(validateSpecies(testCat.species));
+//#endif
     SinglyLinkedList catDB ;
     catDB.push_front( new Cat( "Loki", Color::CREAM, true, Gender::MALE, 1.0 ) ) ;
     catDB.push_front( new Cat( "Milo", Color::BLACK, true, Gender::MALE, 1.1 ) ) ;

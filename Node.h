@@ -10,7 +10,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 #pragma once
 #include "config.h"
-/// FINISHED ; RECHECK LATER
 
 class Node {
     friend class List;

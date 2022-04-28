@@ -31,7 +31,6 @@ using namespace std;
     SHORTHAIR, PERSIAN, SPHYNX };
 */
 
-/// @TODO DELETE CONVERTCATS GENDER/BREED STUFF >> OR transfer??
 enum class Gender { UNKNOWN_GENDER=0, MALE, FEMALE };
 
 inline ostream& operator<<( ostream& lhs_stream, const Gender& rhs_Gender ) {

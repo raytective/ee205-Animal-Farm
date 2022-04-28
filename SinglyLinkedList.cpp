@@ -13,7 +13,7 @@
 #include <cassert>
 
 SinglyLinkedList::SinglyLinkedList() {
-    assert(validate());
+    assert(SinglyLinkedList::validate());
 }
 
 
@@ -28,6 +28,7 @@ void SinglyLinkedList::push_front(Node *newNode) {
         throw logic_error( "Node already exists in container" );
     }
 
+    SinglyLinkedList::validate();
     if( head != nullptr ) {
         newNode->next = head;
         head = newNode;
@@ -39,6 +40,7 @@ void SinglyLinkedList::push_front(Node *newNode) {
 }
 
 Node *SinglyLinkedList::pop_front() noexcept {
+    SinglyLinkedList::validate();
     if( head == nullptr ) {
         return nullptr;
     }
@@ -49,6 +51,7 @@ Node *SinglyLinkedList::pop_front() noexcept {
     delete temp;
     count--;
 
+    SinglyLinkedList::validate();
     return head;
 }
 
@@ -70,21 +73,19 @@ void SinglyLinkedList::insert_after(Node *currentNode, Node *newNode) {
         throw domain_error( "New node not valid" );
     }
     if( isIn( newNode ) == true ) {
-        throw logic_error( "Node already in list :(" );
+        throw logic_error("Node already in list :(");
     }
 
+    SinglyLinkedList::validate();
     newNode->next = currentNode->next;
     currentNode->next = newNode;
     count++;
-    /*
-    Node* temp = currentNode->next;
-    currentNode->next = newNode;
-    newNode = temp;
-    count++;*/
-
+    SinglyLinkedList::validate();
 }
 
 void SinglyLinkedList::dump() const noexcept {
+    SinglyLinkedList::validate();
+
     cout << "SinglyLinkedList:  head=[" << head << "]" << endl;
     for( Node* temp=head ; temp != nullptr ; temp=temp->next ) {
         temp->dump();
@@ -92,5 +93,18 @@ void SinglyLinkedList::dump() const noexcept {
 }
 
 bool SinglyLinkedList::validate() const noexcept {
-    return true;
+    unsigned int counter=0;
+    Node* tmp = head;
+
+    while( tmp != nullptr ) {
+        counter++;
+        tmp = tmp->next;
+    }
+
+    if( counter == count ) {
+        return true;
+    } else {
+        return false;
+    }
+
 }

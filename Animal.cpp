@@ -9,14 +9,17 @@
 /// @date   26_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
 #include "Animal.h"
+#include <cassert>
 
 static const string KINGDOM_NAME = "Animalia";
 
 // @TODO add in maxweight once we get cat up and running again
 
 Animal::Animal(const Weight::t_weight newMaxWeight, const string &newClassification, const string &newSpecies) {
+    weight = Weight( Weight::POUND, newMaxWeight );
     classification = newClassification;
     species = newSpecies;
+    Animal::validate();
 }
 
 Animal::Animal(const Gender newGender, const Weight::t_weight newWeight, const Weight::t_weight newMaxWeight,
@@ -25,6 +28,7 @@ Animal::Animal(const Gender newGender, const Weight::t_weight newWeight, const W
     weight = Weight( newWeight, newMaxWeight );
     classification = newClassification;
     species = newSpecies;
+    Animal::validate();
 }
 
 string Animal::getKingdom() const noexcept {
@@ -49,25 +53,30 @@ Weight::t_weight Animal::getWeight() const noexcept {
 
 void Animal::setWeight(const Weight::t_weight newWeight) {
     weight.setWeight(newWeight);
+    Animal::validate();
 }
 
 void Animal::dump() const noexcept {
     Node::dump();
 
+    Animal::validate();
     FORMAT_LINE_FOR_DUMP( "Animal", "this" ) << this << endl;
     FORMAT_LINE_FOR_DUMP( "Animal","kingdom" ) << getKingdom() << endl;
     FORMAT_LINE_FOR_DUMP( "Animal", "classification" ) << getClassification() << endl;
     FORMAT_LINE_FOR_DUMP( "Animal", "species" ) << getSpecies() << endl;
     FORMAT_LINE_FOR_DUMP( "Animal", "gender" ) << getGender() << endl;
-    FORMAT_LINE_FOR_DUMP( "Animal", "weight" ) << getWeight() << endl;
+    FORMAT_LINE_FOR_DUMP( "Animal", "weight" ) << weight << endl;
 }
 
 bool Animal::validate() const noexcept {
-    ///@TODO do validation
+    assert(validateClassification( classification ));
+    assert(validateSpecies( species ));
+    assert(gender != Gender::UNKNOWN_GENDER);
+    assert(weight.validate());
+
     return true;
 }
 
-/// @TODO CHECK AFTER CLASS IF THIS IS CORRECT VALIDATION
 bool Animal::validateClassification(const string &checkClassification) noexcept {
     if( checkClassification.empty() == true ) {
         return false;
@@ -83,6 +92,8 @@ bool Animal::validateSpecies(const string &checkSpecies) noexcept {
 }
 
 void Animal::setGender(const Gender newGender) {
+    if( gender != Gender::UNKNOWN_GENDER ) {
+        throw invalid_argument(PROGRAM_NAME ": Can't change pre-known gender");
+    }
     gender = newGender;
-
 }

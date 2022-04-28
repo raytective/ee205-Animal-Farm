@@ -19,12 +19,10 @@ Color Mammal::getColor() const noexcept {
 
 void Mammal::setColor(const Color newColor) noexcept {
     color = newColor;
-
 }
 
 void Mammal::dump() const noexcept {
     Animal::dump();
 
     FORMAT_LINE_FOR_DUMP( "Mammal", "color" ) << color  << endl;
-
 }

@@ -229,7 +229,6 @@ bool Weight::validate() const noexcept {
 }
 
 
-
 ///////// THIS SHOULD ALL BE FINE HOPEFULLY ////////
 bool Weight::operator==(const Weight &rhs_Weight) const {
     float lhs_weight = (bIsKnown) ? getWeight(Weight::POUND) : 0;
