@@ -134,6 +134,9 @@ CMakeFiles/ee205_lab_10b_animal_farm.dir/Cat.cpp.o: \
  /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
- /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/cstring \
- /usr/include/string.h /usr/include/strings.h /tmp/tmp.LNPPZbzRZX/Cat.h \
- /tmp/tmp.LNPPZbzRZX/config.h /tmp/tmp.LNPPZbzRZX/convertCats.h
+ /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/cassert \
+ /usr/include/assert.h /tmp/tmp.LNPPZbzRZX/Cat.h \
+ /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
+ /tmp/tmp.LNPPZbzRZX/Mammal.h /tmp/tmp.LNPPZbzRZX/Animal.h \
+ /tmp/tmp.LNPPZbzRZX/Weight.h /tmp/tmp.LNPPZbzRZX/config.h \
+ /tmp/tmp.LNPPZbzRZX/Node.h

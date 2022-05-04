@@ -1,6 +1,7 @@
 CMakeFiles/ee205_lab_10b_animal_farm.dir/main.cpp.o: \
  /tmp/tmp.LNPPZbzRZX/main.cpp /usr/include/stdc-predef.h \
- /usr/include/c++/11/iostream \
+ /tmp/tmp.LNPPZbzRZX/Animal.h /tmp/tmp.LNPPZbzRZX/Weight.h \
+ /tmp/tmp.LNPPZbzRZX/config.h /usr/include/c++/11/iostream \
  /usr/include/c++/11/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/11/x86_64-redhat-linux/bits/os_defines.h \
@@ -121,9 +122,22 @@ CMakeFiles/ee205_lab_10b_animal_farm.dir/main.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc /usr/include/assert.h \
- /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
- /tmp/tmp.LNPPZbzRZX/catDatabase.h /tmp/tmp.LNPPZbzRZX/Cat.h \
- /tmp/tmp.LNPPZbzRZX/config.h /tmp/tmp.LNPPZbzRZX/addCats.h \
- /tmp/tmp.LNPPZbzRZX/reportCats.h /tmp/tmp.LNPPZbzRZX/updateCats.h \
- /tmp/tmp.LNPPZbzRZX/deleteCats.h /tmp/tmp.LNPPZbzRZX/convertCats.h
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/iomanip \
+ /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
+ /usr/include/c++/11/x86_64-redhat-linux/bits/time_members.h \
+ /usr/include/c++/11/x86_64-redhat-linux/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h \
+ /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/utility \
+ /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h \
+ /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc /tmp/tmp.LNPPZbzRZX/Node.h \
+ /tmp/tmp.LNPPZbzRZX/Cat.h /usr/include/c++/11/cstring \
+ /usr/include/string.h /usr/include/strings.h \
+ /tmp/tmp.LNPPZbzRZX/Mammal.h /tmp/tmp.LNPPZbzRZX/SinglyLinkedList.h \
+ /tmp/tmp.LNPPZbzRZX/List.h /usr/include/c++/11/cassert \
+ /usr/include/assert.h

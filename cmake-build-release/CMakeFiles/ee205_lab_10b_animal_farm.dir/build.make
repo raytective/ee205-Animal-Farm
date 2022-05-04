@@ -83,80 +83,10 @@ CMakeFiles/ee205_lab_10b_animal_farm.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ee205_lab_10b_animal_farm.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.LNPPZbzRZX/main.cpp -o CMakeFiles/ee205_lab_10b_animal_farm.dir/main.cpp.s
 
-CMakeFiles/ee205_lab_10b_animal_farm.dir/catDatabase.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/flags.make
-CMakeFiles/ee205_lab_10b_animal_farm.dir/catDatabase.cpp.o: ../catDatabase.cpp
-CMakeFiles/ee205_lab_10b_animal_farm.dir/catDatabase.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ee205_lab_10b_animal_farm.dir/catDatabase.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ee205_lab_10b_animal_farm.dir/catDatabase.cpp.o -MF CMakeFiles/ee205_lab_10b_animal_farm.dir/catDatabase.cpp.o.d -o CMakeFiles/ee205_lab_10b_animal_farm.dir/catDatabase.cpp.o -c /tmp/tmp.LNPPZbzRZX/catDatabase.cpp
-
-CMakeFiles/ee205_lab_10b_animal_farm.dir/catDatabase.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ee205_lab_10b_animal_farm.dir/catDatabase.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.LNPPZbzRZX/catDatabase.cpp > CMakeFiles/ee205_lab_10b_animal_farm.dir/catDatabase.cpp.i
-
-CMakeFiles/ee205_lab_10b_animal_farm.dir/catDatabase.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ee205_lab_10b_animal_farm.dir/catDatabase.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.LNPPZbzRZX/catDatabase.cpp -o CMakeFiles/ee205_lab_10b_animal_farm.dir/catDatabase.cpp.s
-
-CMakeFiles/ee205_lab_10b_animal_farm.dir/deleteCats.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/flags.make
-CMakeFiles/ee205_lab_10b_animal_farm.dir/deleteCats.cpp.o: ../deleteCats.cpp
-CMakeFiles/ee205_lab_10b_animal_farm.dir/deleteCats.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ee205_lab_10b_animal_farm.dir/deleteCats.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ee205_lab_10b_animal_farm.dir/deleteCats.cpp.o -MF CMakeFiles/ee205_lab_10b_animal_farm.dir/deleteCats.cpp.o.d -o CMakeFiles/ee205_lab_10b_animal_farm.dir/deleteCats.cpp.o -c /tmp/tmp.LNPPZbzRZX/deleteCats.cpp
-
-CMakeFiles/ee205_lab_10b_animal_farm.dir/deleteCats.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ee205_lab_10b_animal_farm.dir/deleteCats.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.LNPPZbzRZX/deleteCats.cpp > CMakeFiles/ee205_lab_10b_animal_farm.dir/deleteCats.cpp.i
-
-CMakeFiles/ee205_lab_10b_animal_farm.dir/deleteCats.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ee205_lab_10b_animal_farm.dir/deleteCats.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.LNPPZbzRZX/deleteCats.cpp -o CMakeFiles/ee205_lab_10b_animal_farm.dir/deleteCats.cpp.s
-
-CMakeFiles/ee205_lab_10b_animal_farm.dir/reportCats.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/flags.make
-CMakeFiles/ee205_lab_10b_animal_farm.dir/reportCats.cpp.o: ../reportCats.cpp
-CMakeFiles/ee205_lab_10b_animal_farm.dir/reportCats.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ee205_lab_10b_animal_farm.dir/reportCats.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ee205_lab_10b_animal_farm.dir/reportCats.cpp.o -MF CMakeFiles/ee205_lab_10b_animal_farm.dir/reportCats.cpp.o.d -o CMakeFiles/ee205_lab_10b_animal_farm.dir/reportCats.cpp.o -c /tmp/tmp.LNPPZbzRZX/reportCats.cpp
-
-CMakeFiles/ee205_lab_10b_animal_farm.dir/reportCats.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ee205_lab_10b_animal_farm.dir/reportCats.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.LNPPZbzRZX/reportCats.cpp > CMakeFiles/ee205_lab_10b_animal_farm.dir/reportCats.cpp.i
-
-CMakeFiles/ee205_lab_10b_animal_farm.dir/reportCats.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ee205_lab_10b_animal_farm.dir/reportCats.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.LNPPZbzRZX/reportCats.cpp -o CMakeFiles/ee205_lab_10b_animal_farm.dir/reportCats.cpp.s
-
-CMakeFiles/ee205_lab_10b_animal_farm.dir/updateCats.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/flags.make
-CMakeFiles/ee205_lab_10b_animal_farm.dir/updateCats.cpp.o: ../updateCats.cpp
-CMakeFiles/ee205_lab_10b_animal_farm.dir/updateCats.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ee205_lab_10b_animal_farm.dir/updateCats.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ee205_lab_10b_animal_farm.dir/updateCats.cpp.o -MF CMakeFiles/ee205_lab_10b_animal_farm.dir/updateCats.cpp.o.d -o CMakeFiles/ee205_lab_10b_animal_farm.dir/updateCats.cpp.o -c /tmp/tmp.LNPPZbzRZX/updateCats.cpp
-
-CMakeFiles/ee205_lab_10b_animal_farm.dir/updateCats.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ee205_lab_10b_animal_farm.dir/updateCats.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.LNPPZbzRZX/updateCats.cpp > CMakeFiles/ee205_lab_10b_animal_farm.dir/updateCats.cpp.i
-
-CMakeFiles/ee205_lab_10b_animal_farm.dir/updateCats.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ee205_lab_10b_animal_farm.dir/updateCats.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.LNPPZbzRZX/updateCats.cpp -o CMakeFiles/ee205_lab_10b_animal_farm.dir/updateCats.cpp.s
-
-CMakeFiles/ee205_lab_10b_animal_farm.dir/convertCats.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/flags.make
-CMakeFiles/ee205_lab_10b_animal_farm.dir/convertCats.cpp.o: ../convertCats.cpp
-CMakeFiles/ee205_lab_10b_animal_farm.dir/convertCats.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ee205_lab_10b_animal_farm.dir/convertCats.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ee205_lab_10b_animal_farm.dir/convertCats.cpp.o -MF CMakeFiles/ee205_lab_10b_animal_farm.dir/convertCats.cpp.o.d -o CMakeFiles/ee205_lab_10b_animal_farm.dir/convertCats.cpp.o -c /tmp/tmp.LNPPZbzRZX/convertCats.cpp
-
-CMakeFiles/ee205_lab_10b_animal_farm.dir/convertCats.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ee205_lab_10b_animal_farm.dir/convertCats.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.LNPPZbzRZX/convertCats.cpp > CMakeFiles/ee205_lab_10b_animal_farm.dir/convertCats.cpp.i
-
-CMakeFiles/ee205_lab_10b_animal_farm.dir/convertCats.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ee205_lab_10b_animal_farm.dir/convertCats.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.LNPPZbzRZX/convertCats.cpp -o CMakeFiles/ee205_lab_10b_animal_farm.dir/convertCats.cpp.s
-
 CMakeFiles/ee205_lab_10b_animal_farm.dir/Cat.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/flags.make
 CMakeFiles/ee205_lab_10b_animal_farm.dir/Cat.cpp.o: ../Cat.cpp
 CMakeFiles/ee205_lab_10b_animal_farm.dir/Cat.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ee205_lab_10b_animal_farm.dir/Cat.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ee205_lab_10b_animal_farm.dir/Cat.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ee205_lab_10b_animal_farm.dir/Cat.cpp.o -MF CMakeFiles/ee205_lab_10b_animal_farm.dir/Cat.cpp.o.d -o CMakeFiles/ee205_lab_10b_animal_farm.dir/Cat.cpp.o -c /tmp/tmp.LNPPZbzRZX/Cat.cpp
 
 CMakeFiles/ee205_lab_10b_animal_farm.dir/Cat.cpp.i: cmake_force
@@ -170,7 +100,7 @@ CMakeFiles/ee205_lab_10b_animal_farm.dir/Cat.cpp.s: cmake_force
 CMakeFiles/ee205_lab_10b_animal_farm.dir/Weight.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/flags.make
 CMakeFiles/ee205_lab_10b_animal_farm.dir/Weight.cpp.o: ../Weight.cpp
 CMakeFiles/ee205_lab_10b_animal_farm.dir/Weight.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ee205_lab_10b_animal_farm.dir/Weight.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ee205_lab_10b_animal_farm.dir/Weight.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ee205_lab_10b_animal_farm.dir/Weight.cpp.o -MF CMakeFiles/ee205_lab_10b_animal_farm.dir/Weight.cpp.o.d -o CMakeFiles/ee205_lab_10b_animal_farm.dir/Weight.cpp.o -c /tmp/tmp.LNPPZbzRZX/Weight.cpp
 
 CMakeFiles/ee205_lab_10b_animal_farm.dir/Weight.cpp.i: cmake_force
@@ -184,7 +114,7 @@ CMakeFiles/ee205_lab_10b_animal_farm.dir/Weight.cpp.s: cmake_force
 CMakeFiles/ee205_lab_10b_animal_farm.dir/List.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/flags.make
 CMakeFiles/ee205_lab_10b_animal_farm.dir/List.cpp.o: ../List.cpp
 CMakeFiles/ee205_lab_10b_animal_farm.dir/List.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ee205_lab_10b_animal_farm.dir/List.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ee205_lab_10b_animal_farm.dir/List.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ee205_lab_10b_animal_farm.dir/List.cpp.o -MF CMakeFiles/ee205_lab_10b_animal_farm.dir/List.cpp.o.d -o CMakeFiles/ee205_lab_10b_animal_farm.dir/List.cpp.o -c /tmp/tmp.LNPPZbzRZX/List.cpp
 
 CMakeFiles/ee205_lab_10b_animal_farm.dir/List.cpp.i: cmake_force
@@ -198,7 +128,7 @@ CMakeFiles/ee205_lab_10b_animal_farm.dir/List.cpp.s: cmake_force
 CMakeFiles/ee205_lab_10b_animal_farm.dir/SinglyLinkedList.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/flags.make
 CMakeFiles/ee205_lab_10b_animal_farm.dir/SinglyLinkedList.cpp.o: ../SinglyLinkedList.cpp
 CMakeFiles/ee205_lab_10b_animal_farm.dir/SinglyLinkedList.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ee205_lab_10b_animal_farm.dir/SinglyLinkedList.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ee205_lab_10b_animal_farm.dir/SinglyLinkedList.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ee205_lab_10b_animal_farm.dir/SinglyLinkedList.cpp.o -MF CMakeFiles/ee205_lab_10b_animal_farm.dir/SinglyLinkedList.cpp.o.d -o CMakeFiles/ee205_lab_10b_animal_farm.dir/SinglyLinkedList.cpp.o -c /tmp/tmp.LNPPZbzRZX/SinglyLinkedList.cpp
 
 CMakeFiles/ee205_lab_10b_animal_farm.dir/SinglyLinkedList.cpp.i: cmake_force
@@ -212,7 +142,7 @@ CMakeFiles/ee205_lab_10b_animal_farm.dir/SinglyLinkedList.cpp.s: cmake_force
 CMakeFiles/ee205_lab_10b_animal_farm.dir/Animal.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/flags.make
 CMakeFiles/ee205_lab_10b_animal_farm.dir/Animal.cpp.o: ../Animal.cpp
 CMakeFiles/ee205_lab_10b_animal_farm.dir/Animal.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ee205_lab_10b_animal_farm.dir/Animal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ee205_lab_10b_animal_farm.dir/Animal.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ee205_lab_10b_animal_farm.dir/Animal.cpp.o -MF CMakeFiles/ee205_lab_10b_animal_farm.dir/Animal.cpp.o.d -o CMakeFiles/ee205_lab_10b_animal_farm.dir/Animal.cpp.o -c /tmp/tmp.LNPPZbzRZX/Animal.cpp
 
 CMakeFiles/ee205_lab_10b_animal_farm.dir/Animal.cpp.i: cmake_force
@@ -226,7 +156,7 @@ CMakeFiles/ee205_lab_10b_animal_farm.dir/Animal.cpp.s: cmake_force
 CMakeFiles/ee205_lab_10b_animal_farm.dir/Mammal.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/flags.make
 CMakeFiles/ee205_lab_10b_animal_farm.dir/Mammal.cpp.o: ../Mammal.cpp
 CMakeFiles/ee205_lab_10b_animal_farm.dir/Mammal.cpp.o: CMakeFiles/ee205_lab_10b_animal_farm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ee205_lab_10b_animal_farm.dir/Mammal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ee205_lab_10b_animal_farm.dir/Mammal.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ee205_lab_10b_animal_farm.dir/Mammal.cpp.o -MF CMakeFiles/ee205_lab_10b_animal_farm.dir/Mammal.cpp.o.d -o CMakeFiles/ee205_lab_10b_animal_farm.dir/Mammal.cpp.o -c /tmp/tmp.LNPPZbzRZX/Mammal.cpp
 
 CMakeFiles/ee205_lab_10b_animal_farm.dir/Mammal.cpp.i: cmake_force
@@ -240,11 +170,6 @@ CMakeFiles/ee205_lab_10b_animal_farm.dir/Mammal.cpp.s: cmake_force
 # Object files for target ee205_lab_10b_animal_farm
 ee205_lab_10b_animal_farm_OBJECTS = \
 "CMakeFiles/ee205_lab_10b_animal_farm.dir/main.cpp.o" \
-"CMakeFiles/ee205_lab_10b_animal_farm.dir/catDatabase.cpp.o" \
-"CMakeFiles/ee205_lab_10b_animal_farm.dir/deleteCats.cpp.o" \
-"CMakeFiles/ee205_lab_10b_animal_farm.dir/reportCats.cpp.o" \
-"CMakeFiles/ee205_lab_10b_animal_farm.dir/updateCats.cpp.o" \
-"CMakeFiles/ee205_lab_10b_animal_farm.dir/convertCats.cpp.o" \
 "CMakeFiles/ee205_lab_10b_animal_farm.dir/Cat.cpp.o" \
 "CMakeFiles/ee205_lab_10b_animal_farm.dir/Weight.cpp.o" \
 "CMakeFiles/ee205_lab_10b_animal_farm.dir/List.cpp.o" \
@@ -256,11 +181,6 @@ ee205_lab_10b_animal_farm_OBJECTS = \
 ee205_lab_10b_animal_farm_EXTERNAL_OBJECTS =
 
 ee205_lab_10b_animal_farm: CMakeFiles/ee205_lab_10b_animal_farm.dir/main.cpp.o
-ee205_lab_10b_animal_farm: CMakeFiles/ee205_lab_10b_animal_farm.dir/catDatabase.cpp.o
-ee205_lab_10b_animal_farm: CMakeFiles/ee205_lab_10b_animal_farm.dir/deleteCats.cpp.o
-ee205_lab_10b_animal_farm: CMakeFiles/ee205_lab_10b_animal_farm.dir/reportCats.cpp.o
-ee205_lab_10b_animal_farm: CMakeFiles/ee205_lab_10b_animal_farm.dir/updateCats.cpp.o
-ee205_lab_10b_animal_farm: CMakeFiles/ee205_lab_10b_animal_farm.dir/convertCats.cpp.o
 ee205_lab_10b_animal_farm: CMakeFiles/ee205_lab_10b_animal_farm.dir/Cat.cpp.o
 ee205_lab_10b_animal_farm: CMakeFiles/ee205_lab_10b_animal_farm.dir/Weight.cpp.o
 ee205_lab_10b_animal_farm: CMakeFiles/ee205_lab_10b_animal_farm.dir/List.cpp.o
@@ -269,7 +189,7 @@ ee205_lab_10b_animal_farm: CMakeFiles/ee205_lab_10b_animal_farm.dir/Animal.cpp.o
 ee205_lab_10b_animal_farm: CMakeFiles/ee205_lab_10b_animal_farm.dir/Mammal.cpp.o
 ee205_lab_10b_animal_farm: CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make
 ee205_lab_10b_animal_farm: CMakeFiles/ee205_lab_10b_animal_farm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable ee205_lab_10b_animal_farm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/tmp.LNPPZbzRZX/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ee205_lab_10b_animal_farm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ee205_lab_10b_animal_farm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
