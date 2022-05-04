@@ -1,4 +1,8 @@
 /usr/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" /tmp/tmp.LNPPZbzRZX
+-- CMAKE_SOURCE_DIR = [/tmp/tmp.LNPPZbzRZX]
+-- Generating documentation using Doxygen
+-- DOXYGEN_OUTPUT_DIRECTORY = [/tmp/tmp.LNPPZbzRZX/generated_docs]
+-- PROJECT_BINARY_DIR = [/tmp/tmp.LNPPZbzRZX/cmake-build-release]
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /tmp/tmp.LNPPZbzRZX/cmake-build-release

@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named doxygen
+
+# Build rule for target.
+doxygen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doxygen
+.PHONY : doxygen
+
+# fast build rule for target.
+doxygen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
+.PHONY : doxygen/fast
+
+#=============================================================================
 # Target rules for targets named ee205_lab_10b_animal_farm
 
 # Build rule for target.
@@ -129,173 +142,241 @@ ee205_lab_10b_animal_farm/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/build
 .PHONY : ee205_lab_10b_animal_farm/fast
 
-Animal.o: Animal.cpp.o
-.PHONY : Animal.o
+#=============================================================================
+# Target rules for targets named ee205_lab_10b_animal_farm1
+
+# Build rule for target.
+ee205_lab_10b_animal_farm1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ee205_lab_10b_animal_farm1
+.PHONY : ee205_lab_10b_animal_farm1
+
+# fast build rule for target.
+ee205_lab_10b_animal_farm1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/build
+.PHONY : ee205_lab_10b_animal_farm1/fast
+
+#=============================================================================
+# Target rules for targets named ee205_lab_10b_animal_farm2
+
+# Build rule for target.
+ee205_lab_10b_animal_farm2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ee205_lab_10b_animal_farm2
+.PHONY : ee205_lab_10b_animal_farm2
+
+# fast build rule for target.
+ee205_lab_10b_animal_farm2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/build
+.PHONY : ee205_lab_10b_animal_farm2/fast
+
+src/Animal.o: src/Animal.cpp.o
+.PHONY : src/Animal.o
 
 # target to build an object file
-Animal.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/Animal.cpp.o
-.PHONY : Animal.cpp.o
+src/Animal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/Animal.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/Animal.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/Animal.cpp.o
+.PHONY : src/Animal.cpp.o
 
-Animal.i: Animal.cpp.i
-.PHONY : Animal.i
+src/Animal.i: src/Animal.cpp.i
+.PHONY : src/Animal.i
 
 # target to preprocess a source file
-Animal.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/Animal.cpp.i
-.PHONY : Animal.cpp.i
+src/Animal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/Animal.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/Animal.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/Animal.cpp.i
+.PHONY : src/Animal.cpp.i
 
-Animal.s: Animal.cpp.s
-.PHONY : Animal.s
+src/Animal.s: src/Animal.cpp.s
+.PHONY : src/Animal.s
 
 # target to generate assembly for a file
-Animal.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/Animal.cpp.s
-.PHONY : Animal.cpp.s
+src/Animal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/Animal.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/Animal.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/Animal.cpp.s
+.PHONY : src/Animal.cpp.s
 
-Cat.o: Cat.cpp.o
-.PHONY : Cat.o
+src/Cat.o: src/Cat.cpp.o
+.PHONY : src/Cat.o
 
 # target to build an object file
-Cat.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/Cat.cpp.o
-.PHONY : Cat.cpp.o
+src/Cat.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/Cat.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/Cat.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/Cat.cpp.o
+.PHONY : src/Cat.cpp.o
 
-Cat.i: Cat.cpp.i
-.PHONY : Cat.i
+src/Cat.i: src/Cat.cpp.i
+.PHONY : src/Cat.i
 
 # target to preprocess a source file
-Cat.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/Cat.cpp.i
-.PHONY : Cat.cpp.i
+src/Cat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/Cat.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/Cat.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/Cat.cpp.i
+.PHONY : src/Cat.cpp.i
 
-Cat.s: Cat.cpp.s
-.PHONY : Cat.s
+src/Cat.s: src/Cat.cpp.s
+.PHONY : src/Cat.s
 
 # target to generate assembly for a file
-Cat.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/Cat.cpp.s
-.PHONY : Cat.cpp.s
+src/Cat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/Cat.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/Cat.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/Cat.cpp.s
+.PHONY : src/Cat.cpp.s
 
-List.o: List.cpp.o
-.PHONY : List.o
+src/List.o: src/List.cpp.o
+.PHONY : src/List.o
 
 # target to build an object file
-List.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/List.cpp.o
-.PHONY : List.cpp.o
+src/List.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/List.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/List.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/List.cpp.o
+.PHONY : src/List.cpp.o
 
-List.i: List.cpp.i
-.PHONY : List.i
+src/List.i: src/List.cpp.i
+.PHONY : src/List.i
 
 # target to preprocess a source file
-List.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/List.cpp.i
-.PHONY : List.cpp.i
+src/List.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/List.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/List.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/List.cpp.i
+.PHONY : src/List.cpp.i
 
-List.s: List.cpp.s
-.PHONY : List.s
+src/List.s: src/List.cpp.s
+.PHONY : src/List.s
 
 # target to generate assembly for a file
-List.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/List.cpp.s
-.PHONY : List.cpp.s
+src/List.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/List.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/List.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/List.cpp.s
+.PHONY : src/List.cpp.s
 
-Mammal.o: Mammal.cpp.o
-.PHONY : Mammal.o
+src/Mammal.o: src/Mammal.cpp.o
+.PHONY : src/Mammal.o
 
 # target to build an object file
-Mammal.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/Mammal.cpp.o
-.PHONY : Mammal.cpp.o
+src/Mammal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/Mammal.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/Mammal.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/Mammal.cpp.o
+.PHONY : src/Mammal.cpp.o
 
-Mammal.i: Mammal.cpp.i
-.PHONY : Mammal.i
+src/Mammal.i: src/Mammal.cpp.i
+.PHONY : src/Mammal.i
 
 # target to preprocess a source file
-Mammal.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/Mammal.cpp.i
-.PHONY : Mammal.cpp.i
+src/Mammal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/Mammal.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/Mammal.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/Mammal.cpp.i
+.PHONY : src/Mammal.cpp.i
 
-Mammal.s: Mammal.cpp.s
-.PHONY : Mammal.s
+src/Mammal.s: src/Mammal.cpp.s
+.PHONY : src/Mammal.s
 
 # target to generate assembly for a file
-Mammal.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/Mammal.cpp.s
-.PHONY : Mammal.cpp.s
+src/Mammal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/Mammal.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/Mammal.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/Mammal.cpp.s
+.PHONY : src/Mammal.cpp.s
 
-SinglyLinkedList.o: SinglyLinkedList.cpp.o
-.PHONY : SinglyLinkedList.o
+src/SinglyLinkedList.o: src/SinglyLinkedList.cpp.o
+.PHONY : src/SinglyLinkedList.o
 
 # target to build an object file
-SinglyLinkedList.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/SinglyLinkedList.cpp.o
-.PHONY : SinglyLinkedList.cpp.o
+src/SinglyLinkedList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/SinglyLinkedList.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/SinglyLinkedList.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/SinglyLinkedList.cpp.o
+.PHONY : src/SinglyLinkedList.cpp.o
 
-SinglyLinkedList.i: SinglyLinkedList.cpp.i
-.PHONY : SinglyLinkedList.i
+src/SinglyLinkedList.i: src/SinglyLinkedList.cpp.i
+.PHONY : src/SinglyLinkedList.i
 
 # target to preprocess a source file
-SinglyLinkedList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/SinglyLinkedList.cpp.i
-.PHONY : SinglyLinkedList.cpp.i
+src/SinglyLinkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/SinglyLinkedList.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/SinglyLinkedList.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/SinglyLinkedList.cpp.i
+.PHONY : src/SinglyLinkedList.cpp.i
 
-SinglyLinkedList.s: SinglyLinkedList.cpp.s
-.PHONY : SinglyLinkedList.s
+src/SinglyLinkedList.s: src/SinglyLinkedList.cpp.s
+.PHONY : src/SinglyLinkedList.s
 
 # target to generate assembly for a file
-SinglyLinkedList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/SinglyLinkedList.cpp.s
-.PHONY : SinglyLinkedList.cpp.s
+src/SinglyLinkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/SinglyLinkedList.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/SinglyLinkedList.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/SinglyLinkedList.cpp.s
+.PHONY : src/SinglyLinkedList.cpp.s
 
-Weight.o: Weight.cpp.o
-.PHONY : Weight.o
+src/Weight.o: src/Weight.cpp.o
+.PHONY : src/Weight.o
 
 # target to build an object file
-Weight.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/Weight.cpp.o
-.PHONY : Weight.cpp.o
+src/Weight.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/Weight.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/Weight.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/Weight.cpp.o
+.PHONY : src/Weight.cpp.o
 
-Weight.i: Weight.cpp.i
-.PHONY : Weight.i
+src/Weight.i: src/Weight.cpp.i
+.PHONY : src/Weight.i
 
 # target to preprocess a source file
-Weight.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/Weight.cpp.i
-.PHONY : Weight.cpp.i
+src/Weight.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/Weight.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/Weight.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/Weight.cpp.i
+.PHONY : src/Weight.cpp.i
 
-Weight.s: Weight.cpp.s
-.PHONY : Weight.s
+src/Weight.s: src/Weight.cpp.s
+.PHONY : src/Weight.s
 
 # target to generate assembly for a file
-Weight.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/Weight.cpp.s
-.PHONY : Weight.cpp.s
+src/Weight.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/Weight.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/Weight.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/Weight.cpp.s
+.PHONY : src/Weight.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm1.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm1.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee205_lab_10b_animal_farm2.dir/build.make CMakeFiles/ee205_lab_10b_animal_farm2.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -305,28 +386,31 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... doxygen"
 	@echo "... ee205_lab_10b_animal_farm"
-	@echo "... Animal.o"
-	@echo "... Animal.i"
-	@echo "... Animal.s"
-	@echo "... Cat.o"
-	@echo "... Cat.i"
-	@echo "... Cat.s"
-	@echo "... List.o"
-	@echo "... List.i"
-	@echo "... List.s"
-	@echo "... Mammal.o"
-	@echo "... Mammal.i"
-	@echo "... Mammal.s"
-	@echo "... SinglyLinkedList.o"
-	@echo "... SinglyLinkedList.i"
-	@echo "... SinglyLinkedList.s"
-	@echo "... Weight.o"
-	@echo "... Weight.i"
-	@echo "... Weight.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... ee205_lab_10b_animal_farm1"
+	@echo "... ee205_lab_10b_animal_farm2"
+	@echo "... src/Animal.o"
+	@echo "... src/Animal.i"
+	@echo "... src/Animal.s"
+	@echo "... src/Cat.o"
+	@echo "... src/Cat.i"
+	@echo "... src/Cat.s"
+	@echo "... src/List.o"
+	@echo "... src/List.i"
+	@echo "... src/List.s"
+	@echo "... src/Mammal.o"
+	@echo "... src/Mammal.i"
+	@echo "... src/Mammal.s"
+	@echo "... src/SinglyLinkedList.o"
+	@echo "... src/SinglyLinkedList.i"
+	@echo "... src/SinglyLinkedList.s"
+	@echo "... src/Weight.o"
+	@echo "... src/Weight.i"
+	@echo "... src/Weight.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

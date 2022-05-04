@@ -150,13 +150,28 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_DESCRIPTION:STATIC=
+CMAKE_PROJECT_DESCRIPTION:STATIC=All animals are equal, but some animals are more equal than others
 
 //Value Computed by CMake
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=ee205_lab_10b_animal_farm
+CMAKE_PROJECT_NAME:STATIC=ee205_animal_farm
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=3.0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=3
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -220,11 +235,41 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Diagram Editor tool for use with Doxygen
+DOXYGEN_DIA_EXECUTABLE:FILEPATH=/usr/bin/dia
+
+//Dot tool for use with Doxygen
+DOXYGEN_DOT_EXECUTABLE:FILEPATH=/usr/bin/dot
+
+//Doxygen documentation generation tool (http://www.doxygen.org)
+DOXYGEN_EXECUTABLE:FILEPATH=/usr/bin/doxygen
+
+//Message sequence chart tool for use with Doxygen
+DOXYGEN_MSCGEN_EXECUTABLE:FILEPATH=/usr/bin/mscgen
+
 //Path to a program.
 ProcessorCount_cmd_nproc:FILEPATH=/usr/bin/nproc
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
+
+//Value Computed by CMake
+Project_BINARY_DIR:STATIC=/tmp/tmp.LNPPZbzRZX/cmake-build-release
+
+//Value Computed by CMake
+Project_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=/tmp/tmp.LNPPZbzRZX
+
+//Value Computed by CMake
+ee205_animal_farm_BINARY_DIR:STATIC=/tmp/tmp.LNPPZbzRZX/cmake-build-release
+
+//Value Computed by CMake
+ee205_animal_farm_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+ee205_animal_farm_SOURCE_DIR:STATIC=/tmp/tmp.LNPPZbzRZX
 
 //Value Computed by CMake
 ee205_lab_08d_animal_farm_1_clion_BINARY_DIR:STATIC=/tmp/tmp.LNPPZbzRZX/cmake-build-release
@@ -409,6 +454,16 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: DOXYGEN_DIA_EXECUTABLE
+DOXYGEN_DIA_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: DOXYGEN_DOT_EXECUTABLE
+DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: DOXYGEN_EXECUTABLE
+DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: DOXYGEN_MSCGEN_EXECUTABLE
+DOXYGEN_MSCGEN_EXECUTABLE-ADVANCED:INTERNAL=1
+//Details about finding Doxygen
+FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[/usr/bin/doxygen][cfound components: doxygen dot mscgen dia ][v1.9.1()]
 //ADVANCED property for variable: ProcessorCount_cmd_nproc
 ProcessorCount_cmd_nproc-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl

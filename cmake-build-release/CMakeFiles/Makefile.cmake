@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
-  "CMakeFiles/3.22.2/CMakeCCompiler.cmake"
+  "CMakeDoxyfile.in"
+  "CMakeDoxygenDefaults.cmake"
   "CMakeFiles/3.22.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.2/CMakeSystem.cmake"
-  "/usr/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
@@ -22,10 +22,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
-  "/usr/share/cmake/Modules/Compiler/GNU-C.cmake"
   "/usr/share/cmake/Modules/Compiler/GNU-CXX.cmake"
   "/usr/share/cmake/Modules/Compiler/GNU.cmake"
-  "/usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake"
+  "/usr/share/cmake/Modules/FindDoxygen.cmake"
+  "/usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
+  "/usr/share/cmake/Modules/FindPackageMessage.cmake"
   "/usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/share/cmake/Modules/Platform/Linux-GNU.cmake"
   "/usr/share/cmake/Modules/Platform/Linux.cmake"
@@ -41,10 +42,14 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "Doxyfile.doxygen"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/doxygen.dir/DependInfo.cmake"
   "CMakeFiles/ee205_lab_10b_animal_farm.dir/DependInfo.cmake"
+  "CMakeFiles/ee205_lab_10b_animal_farm1.dir/DependInfo.cmake"
+  "CMakeFiles/ee205_lab_10b_animal_farm2.dir/DependInfo.cmake"
   )
